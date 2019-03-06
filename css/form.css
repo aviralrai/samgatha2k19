@@ -1,0 +1,68 @@
+@font-face {
+    font-family: register-header;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Market_Deco.woff') format('woff');
+}
+
+@font-face {
+    font-family: form-label;
+    src: url('../fonts/IBMPlexSans-Regular.ttf');
+}
+
+.ui.form .field > label {
+    text-align: left !important;
+}
+
+.login-form {
+    background-color: rgb(9, 17, 27) !important;
+}
+
+.register {
+    font-family: register-header !important;
+    color: rgb(255,255,255) !important;
+    font-size: 6em !important;
+}
+
+.form-body {
+    background-color: rgb(9, 17, 27) !important;
+    border-color: rgb(224,90,153) !important;
+    border-width: 0.1875em !important;
+    border-radius: 1em !important;
+}
+
+label {
+    font-family: form-label !important;
+    color: rgb(224,90,153) !important;
+    font-size: 1.2em !important;
+}
+
+.form-button {
+    font-family: form-label !important;
+    background-color: rgb(9, 17, 27) !important;
+    color:rgb(255,255,255) !important;
+    border: 0.1875em solid rgb(224,90,153) !important;
+}
+
+input {
+    font-family: form-label !important;
+    background-color: rgb(9, 17, 27) !important;
+    border: 0.1875em solid rgb(243,132,69) !important;
+}
+
+input::placeholder {
+    font-family: form-label !important;
+    color: rgb(255,255,255) !important;
+}
+
+input[type=text] {
+    font-family: form-label !important;
+    color: rgb(255,255,255) !important;
+}
+
+.ui.selection.dropdown {
+    font-family: form-label !important;
+    background-color: rgb(9, 17, 27) !important;
+    border: 0.1875em solid rgb(243,132,69) !important;
+    color: rgb(255,255,255) !important;
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/Favicon Square.ico" type="image/x-icon" sizes="16x16">
+    <link rel="shortcut icon" href="img/Favicon Square.ico" type="image/x-icon" sizes="16x16">
+    <link rel="apple-touch-icon" href="img/Favicon Square.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proshows</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/proshows.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="device-notification">
+        <img style="width: 150px;" src="img/samlogo.png" />
+        <p class="device-notification--message">Samgatha has so much to offer that we must request you orient your
+            device to
+            portrait or find a larger screen. You won't be disappointed.</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" id="sideNav" style="width: 13rem;">
+        <a class="navbar-brand js-scroll-trigger"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item ml-5 ">
+                    <a class="nav-link js-scroll-trigger " id="comedy1">COMEDY NIGHT</a>
+                </li>
+                <li class="nav-item ml-5">
+                    <a class="nav-link js-scroll-trigger " id="edm1">EDM NIGHT</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="rock1">ROCK NIGHT</a>
+                </li>
+                <li class="ml-4 social-icons" id="social" style="position:absolute;display:block;bottom:1%;">
+                    <span><a href="https://www.instagram.com/samgatha/?hl=en" target="_blank"><img style="width:51x;height:49px;margin-right: 5vw;"
+                                class="insta" src="./img/insta.png"></a> </span>
+                    <a href="https://www.facebook.com/samgathaatiiitdm/" target="_blank"><img style="width:30px;height:49px;margin-left:-4vw;"
+                            class="fb" src="./img/fb.png"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="sam-logo">
+        <a href="index.html"> <img src="img/samlogo.png" alt="" style="position:fixed;"> </a>
+    </div>
+    <div class="hamburger-icon">
+        <img id="icon" src="img/rightham.png" onclick="changeColor()" />
+    </div>
+    <nav id="nav">
+        <div class="ham-div">
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">1</span></div>
+                <div class="col-6"><a class="ham-menu" href="index.html" style="text-decoration:none">HOME</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">2</span></div>
+                <div class="col-6"><a class="ham-menu" href="events.html" style="text-decoration:none">EVENTS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">3</span></div>
+                <div class="col-6"><a href="#" class="ham-menu" style="text-decoration:none">PROSHOWS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">4</span></div>
+                <div class="col-6"><a href="team.html" class="ham-menu" style="text-decoration:none">TEAMS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">5</span></div>
+                <div class="col-6"><a href='https://drive.google.com/file/d/1SBsV7xj176LTbFT5TJu2-sgQxW9F11ea/view?usp=sharing' class="ham-menu" style="text-decoration:none">SCHEDULE</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">6</span></div>
+                <div class="col-6"><a class="ham-menu" href="sponsors.html" style="text-decoration:none">SPONSORS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">6</span></div>
+                <div class="col-6"><a class="ham-menu" href="workshops.html" style="text-decoration:none">WORKSHOPS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">7</span></div>
+                <div class="col-6"><a class="ham-menu reg" href="registration.html" style="text-decoration:none">REGISTER</a></div>
+            </div>
+        </div>
+        <div class="ham-social-media">
+            <span><a href="https://www.instagram.com/samgatha/?hl=en" target="_blank"><img style="width: 12vw;height: auto;margin-left: 5vw;"
+                        class="insta" src="./img/insta.png"></a> </span>
+            <a href="https://www.facebook.com/samgathaatiiitdm/" target="_blank"><img style="width:7vw;height:auto; margin-left: 2vw;"
+                    class="fb" src="./img/fb.png"></a>
+        </div>
+    </nav>
+
+    <div id="onepage">
+        <div id="comedy">
+            <div class="heading">
+                <h2 class="font">Comedy Night</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 c1">
+                        <img id="co1" src="img/proshows/vikram.png" />
+                    </div>
+                    <div class="col-sm-4 c2">
+                        <img id="co2" src="img/proshows/nick.png" />
+                    </div>
+                    <div class="col-sm-4 c3">
+                        <img id="co3" src="img/proshows/kuldeep.png" />
+                    </div>
+                </div>
+            </div>  
+            <div class="arrowdown" id="d1">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+            <div id="overlay" class="stream">
+                <div class="cross">
+                    <a href="registration.html"><button class="register">REGISTER</button></a>
+                    <span><a href="https://www.instagram.com/vikramarul/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>
+                      <div class="event-play">
+                        <h3>Vikram Arul</h3>
+                    </div>
+                    <i id="close" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content1">
+                    </div>
+                </div>
+            </div>
+            <div id="overlay1" class="stream">
+                <div class="cross">
+                    <a href="registration.html" ><button class="register">REGISTER</button></a>
+                    <span><a href="https://www.instagram.com/nicketronix/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>
+                      <div class="event-play">
+                        <h3>Guru 'g' nicketan</h3>
+                    </div>
+                    <i id="close1" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content2">
+                    </div>
+                </div>
+            </div>
+            <div id="overlay2" class="stream">
+                <div class="cross">
+                    <a href="registration.html" ><button class="register">REGISTER</button></a>
+                    <span><a href="https://www.instagram.com/shutupkuldeep/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>
+                      <div class="event-play">
+                        <h3>Kuldeep Rathore</h3>
+                    </div>
+                    <i id="close2" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="edm">
+            <div class="heading">
+                <h2 class="font">EDM NIGHT</h2>
+            </div>
+            <div class="arrowup" id="u1">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 e1">
+                        <img id="eo1" src="img/proshows/sureal.png" />
+                    </div>
+                    <div class="col-sm-6 e2">
+                        <img id="eo2" src="img/proshows/spidy.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="arrowdown" id="d2">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+            <div id="overlay3" class="stream">
+                <div class="cross">
+                    <a href="registration.html" ><button class="register">REGISTER</button></a>
+                    <span><a href="https://www.instagram.com/realsureal/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>
+                      <div class="event-play">
+                        <h3>su real</h3>
+                    </div>
+                    <i id="close3" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content4">
+                        <p><span style="color:blanchedalmond;">“When he’s not playing mad professor in his West Delhi beat lab, he’s as likely to be tearing up a festival green room or inciting a thousand simultaneous heart attacks from behind the decks.”</span> – GQ</p>
+                        <p><span style="color:blanchedalmond;">“While fellow producer/DJ Nucleya has spearheaded the genre of desi bass, it is Su Real who has added weight to the genre and converted it into a movement.”</span> – Mumbai Mirror</p>
+                        <p>Popular culture in India is evolving rapidly, and <span style="color:blanchedalmond;">Su Real</span> is at the forefront of that movement. The old divisions – Bollywood, commercial, trance – no longer make sense. Su Real represents this new breed of Indian music producers who create and curate for the modern Indian dancefloor.</p>
+                        <p>In this new era of viral trends and overnight sensations, Su Real has evolved into a known constant in India’s musical underground. Returning home to Delhi from 10 years as PR Specialist in New York and Montreal to a growing local scene in 2008, he dove right in - programming the events and cultural activities at the legendary T.L.R., the first venue that lit up Hauz Khas Village with non-commercial music and alternative arts. He first gained notoriety as a DJ in 2010 with his Disco 31 nights at T.L.R. There, he developed his sound & crowd until in 2013, Rolling Stone India declared <span style="color:blanchedalmond;">“Su Real is the legendary secret ingredient to some of Delhi’s recent favourite underground sets/parties/combinations thereof.”</span></p>
+                        <p>Taking his trademark style across the country, Su Real shared the stage with a veritable who’s who of dance music today: Major Lazer, Skrillex, Diplo, Jason Derulo, Yellow Claw, NGHTMRE, JSTJR, Pretty Lights, Hudson Mohawke, MC Zulu, Alo Wala, among several others. Nucleya, the reigning king of Indian EDM has long been a benefactor, offering him key support slots on his tours & album launches. Su Real has also performed at major music festivals including Sunburn, Vh1 Supersonic, NH7 Weekender, Timeout72, MTV Bloc Party, India Bike Week and more.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay4" class="stream">
+                <div class="cross">
+                    <a href="registration.html" ><button class="register">REGISTER</button></a>
+                    <span><a href="#" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>
+                      <div class="event-play">
+                        <h3>spidy</h3>
+                    </div>
+                    <i id="close4" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rock">
+            <div class="heading">
+                <h2 class="font">ROCK NIGHT</h2>
+            </div>
+            <div class="arrowup" id="u2">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 r1">
+                        <img id="ro1" src="img/proshows/pineapple.png" />
+                    </div>
+                    <div class="col-sm-6 r2">
+                        <img id="ro2" src="img/proshows/vidyut.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="overlay5" class="stream">
+                <div class="cross">
+                    <a href="registration.html" ><button class="register">REGISTER</button></a>
+                    <span><a href="https://www.instagram.com/pineappleexpress.music/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>
+                      <div class="event-play">
+                        <h3>pineapple express</h3>
+                    </div>
+                    <i id="close5" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content6">
+                    </div>
+                </div>
+            </div>
+            <div id="overlay6" class="stream">
+                <div class="cross">
+                    <a href="registration.html" ><button class="register">REGISTER</button></a>
+                    <span><a href="#" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>
+                      <div class="event-play">
+                        <h3>vidyut</h3>
+                    </div>
+                    <i id="close6" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content7">
+                        <p><span style="color:blanchedalmond;">Vidyut</span> is a fusion post-prog band based out of Chennai. Since the time Vidyut was formed back in 2017, it has got various achievements. Having won prizes in various band competitions in colleges like SRM, MCC, Veltech, IFMR, etc.and also Forum Rock On, the band has always made an impact on the crowd. Their music is something very different from most of the bands out there. Influenced by band and musicians like Agam, Thaikuddam Bridge, Fossils, Mohiner Ghoraguli, Dream Theater, Alter Bridge, Opeth, Porcupine tree, Periphery, Plini, Intervals, etc., Vidyut sounds a lot like them yet somehow they sound completely different. The band has also played in various shows outside of competitions. Some of them are The Unwind Center, Chennai., The Forum Vijaya Mall, Chennai.(Rock On winners), Indian Youth Conclave by The Climber, Chennai., Lake View Resort, Tajpur, West Bengal, Oyezter Bay, Mandarmani, West Bengal, etc. 
+                        </p>
+                        <p>The band members comprise of <span style="color:blanchedalmond">Saptarshi Chakraborty</span> (Vocals), <span style="color:blanchedalmond">Ayan Choudhury</span> (guitar), <span style="color:blanchedalmond">Snehashish Das</span> (bass/backing vocals), <span style="color:blanchedalmond">Melvin Linus</span> (drums).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var clickedModal = 0;
+        for (let i = 1; i <=7; i++) {
+            let toppy = document.getElementById('content'+String(i));
+            toppy.addEventListener("onwheel" in document ? "wheel" : "mousewheel", function (e) {
+                if (e.deltaY < 0) {
+                    toppy.scrollBy(0, -8);
+                }
+                if (e.deltaY > 0) {
+                    toppy.scrollBy(0, 8);
+                }
+            });
+        }
+    </script>
+    <script>
+        let list = [
+            ['comedy1', 1],
+            ['edm1', 0],
+            ['rock1', 0]
+        ];
+        let list2 = ['d1', 'd2'];
+        let list3 = ['u1', 'u2'];
+        let list4 = [
+        ['co1',0,'#overlay','#close'],
+        ['co2',0,'#overlay1','#close1'],
+        ['co3',0,'#overlay2','#close2'],
+        ['eo1',0,'#overlay3','#close3'],
+        ['eo2',0,'#overlay4','#close4'],
+        ['ro1',0,'#overlay5','#close5'],
+        ['ro2',0,'#overlay6','#close6'],
+        ];
+    </script>
+    <script src="js/index-proshows.js"></script>
+    <script src="js/overlay-proshows.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/active.js"></script>
+    <script>
+        $("a").hover(function () {
+            if (list[pos][0] != $(this).attr('id')) {
+                $(this).css("color", "#F38445");
+            }
+        }, function () {
+            if (list[pos][0] != $(this).attr('id')) {
+                $(this).css("color", "white");
+            }
+        });
+    </script>
+</body>
+
+</html>

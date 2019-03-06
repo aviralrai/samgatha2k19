@@ -1,0 +1,349 @@
+@font-face {
+    font-family: mynav;
+    src: url(../fonts/nav.ttf);
+  }
+  
+  @font-face {
+    font-family: mynavnum;
+    src: url(../fonts/Vintage\ Warehouse.ttf);
+  }
+  
+  @font-face {
+    font-family: cont;
+    src: url(../fonts/IBMPlexSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: sunset;
+    src: url(../fonts/register.ttf);
+  }
+
+body {
+    background-color: #448d92 !important;
+    font-family: 'Raleway', sans-serif;
+  }
+  .themehead{
+    font-family: mynav;
+    font-size: 100px;
+    position: relative;
+    top: 0%;
+    width: 100%;
+  }
+  .container1 {
+    text-align: center;
+  }
+  h1.heading{
+    font-family: mynav;
+    color: white;
+    font-size: 10vh;
+    position: relative;
+    top: 2%;
+    text-align: center;
+}
+  .container1 div {
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 300px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 7px;
+    margin: 35px 20px;
+    transition: 0.7s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    box-shadow: 0 50px 150px -20px rgba(0, 0, 0, .75);
+  }
+  .logoa{
+    width: 100%;/*height: 4rem;*/ background-color: white;  left:0; top:0; position: fixed;
+    z-index: 10;
+  }
+  
+
+  body h1{
+
+   font-family: mynav;
+   color: #030f33;
+  }
+
+ 
+
+
+  body p{
+    text-align: center;
+    font-family: cont;
+    font-size: 1.5rem;
+    color: white;   
+    
+  }
+   @media (max-width: 600px) {
+    /* mobile*/
+    .device-notification{
+        display: none;
+      }
+  h1{
+    font-size:2rem;
+  }
+  .logoa{
+    height:7.5rem;
+    text-align: center;
+  }
+    body p{
+ margin-top: 4em;
+ font-size: 1.3rem;
+}
+  }
+@media (max-width: 375px){
+    h1.heading{
+    font-size: 8vh !important;
+    position: relative;
+    top: 14% !important;
+    color: white;
+    }
+}
+
+  @media (min-width: 1000px) {
+  /* desktop*/
+  .device-notification{
+    display: none;
+  }
+  h1{
+     text-align: center;
+   font-size: 4rem;
+ }
+   .logoa{
+    height:10rem;
+    text-align: center;
+  }
+  body p{
+ margin-top: 2.7em;
+}
+.sam-logo a img{
+    position: fixed;
+    width: 100px !important;
+    top: 5%;
+    left: 3%;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 50%;
+    visibility: visible;
+}
+}
+  .container1 #decor{
+    background-image: url(https://pp.vk.me/X4GW9k3DbqGLK4oi8hqt0PQAcrJw5tv19FxRcQ/kPeiR00XcMA.jpg);
+    background-position-y: 3rem;
+  }
+
+  .container1 #hospi{
+    background-image: url(https://www.ahaworldcampus.com/images/advanced-hospitality-leadership-page.jpg);
+    background-size: 120%;
+    background-position-y: 3rem;
+  }
+
+  .container1 #pub{
+    background-image: url(../img/org-teams/pub.jpg);
+    background-size: 100%;
+    background-position-y: 5rem;
+  }
+
+  .container1 #spons{
+    background-image: url(https://ak4.picdn.net/shutterstock/videos/7569724/thumb/1.jpg);
+    background-size: 120%;
+    background-position-y: 5rem;
+  }
+
+  .container1 #design{
+    background-image: url(../img/org-teams/design.png);
+    background-size: 138%;
+    background-position-y: 3rem;
+    background-position-x: -1.5rem;
+
+  }
+
+  .container1 #content{
+    background-image: url(../img/org-teams/content.jpg);
+    background-position-y: 3rem;
+    background-size: 150%;
+    background-position-x: -3rem;
+    
+  }
+
+  .container1 #informals{
+    background-image: url(http://fiber.westnet.ca:81/cbcarticles/images/1.3949781.1485273913!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/beat-the-blues.jpg);
+    background-size: 270%;
+    background-position-y: 3rem;
+  }
+
+  .container1 #qms{
+    background-image: url(../img/org-teams/qms.jpg);
+    background-size: 215%;
+    background-position-y: 3rem;
+    background-position-x: -8rem;
+  }
+
+  .container1 #webops{
+    background-image: url(https://cdn-images-1.medium.com/max/1600/0*R8xAqSnJV8FQqpZd.png);
+    background-size: 300%; 
+    background-position-x: -1.5rem;
+    background-position-y: 3rem;
+    
+  }
+
+  .container1 #fin{
+    background-image: url(../img/org-teams/finance.jpg);
+    background-size: 260%;
+    background-position-x: -7rem;
+    background-position-y: 3rem;
+  }
+
+  .container1 #coords{
+    background-image: url(../img/org-teams/coord.jpg);
+    background-position-y: 5rem;
+    background-size: 250%;
+    background-position-x: -9rem;
+    
+  }
+
+  .container1 div img {
+    position: relative;
+    width: 150%;
+    margin: -25% -25%;
+    min-height: 100%;
+    transition: 0.7s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+
+  .container1 div h1{
+      color: antiquewhite;
+      font-size: 1.7rem;
+  }
+  
+  
+  .container1 div span {
+    
+    top: 10px;
+    left: 20px;
+    font-family: cont;
+    color: rgba(255, 255, 255, 0);
+    font-size: 0.98rem;
+    transition: 0.8s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+
+  .container1 div span ul{
+    text-align: left;
+    font-family: cont;
+  }
+  .container1 div:before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .1);
+    width: 50px;
+    height: 400px;
+    transform: rotate(30deg);
+    top: -40px;
+    left: -200px;
+    transition: 1s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .container1 #decor:hover, #hospi:hover, #pub:hover, #spons:hover, #design:hover, #content:hover, #informals:hover, #qms:hover, #webops:hover, #fin:hover, #coords:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    border-radius: 10px;
+    box-shadow: 0 20px 300px -20px rgba(0, 0, 0, 1);
+    color: black;
+    background: rgb(211,211,211);
+    
+  }
+  .container1 div:hover:before {
+    content: '';
+    left: 350px;
+  }
+  .container1 div:hover img {
+    width: 100%;
+    margin: 0;
+    min-height: 100%;
+  }
+  .container1 div:hover span {
+    color: black;
+    bottom: 20px;
+  }
+  
+  .container1 div:hover h1 {
+    color: black;
+    
+  }
+
+  .back{
+    text-decoration: none;
+    position:fixed; 
+    bottom: 0; 
+    right: 0;
+    width: 100%;
+    text-align: right;
+    overflow-x: hidden;
+    font-family: cont;
+    font-size: 1.5rem;
+    color:black;}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active{
+    text-decoration: underline;
+    color:#85a0f2;
+  }
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .device-notification{
+        display: none;
+      }
+  .sam-logo a img {
+    position: fixed;
+    width: 100px !important;
+    top: 5%;
+    left: 3%;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 50%;
+    visibility: visible;
+  }
+  .font {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+  }
+  h1.heading {
+    font-size: 10vh;
+    position: relative;
+    top: 10%;
+    color: white;
+}
+}
+
+@media screen and (max-width: 1022px) and (orientation:landscape) {
+    .device-notification {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      background-color: #0c0c0c;
+      z-index: 10000;
+    }
+    .device-notification--message {
+      width: 70%;
+      font-family: cont;
+      color:#fff8ee;
+      margin: 30px 0 0 0;
+      font-weight: 700;
+      text-align: center;
+      font-size: unset;
+    }
+  }
+#webops ul{
+  font-size: 15.5px;
+}

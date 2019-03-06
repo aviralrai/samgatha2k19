@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/Favicon Square.ico" type="image/x-icon" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" media="(min-width: 425px) and (max-width:575.98px)" href="css/events.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="device-notification">
+        <img style="width: 150px;" src="img/samlogo.png" />
+        <p class="device-notification--message">Samgatha has so much to offer that we must request you orient your
+            device to
+            portrait or find a larger screen. You won't be disappointed.</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" id="sideNav" style="width:17rem;z-index:20 !important;">
+        <a class="navbar-brand js-scroll-trigger"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <!-- <li class="ml-4" style="position:absolute;display:block;top:3%;">
+                    <a href="index.html"><img style="width: 180px;height: auto;margin-left: auto;margin-right: auto;"
+                            src="img/samlogo.png" /></a>
+                </li> -->
+                <li class="nav-item ml-5 ">
+                    <a class="nav-link js-scroll-trigger " id="home2" href="#homepage">EVENTS</a>
+                </li>
+                <li class="nav-item ml-5 ">
+                    <a class="nav-link js-scroll-trigger " id="photo2" href="#homepage">PHOTOGRAPHY</a>
+                </li>
+                <li class="nav-item ml-5">
+                    <a class="nav-link js-scroll-trigger " id="dance2" href="#about">DANCE</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="art2" href="#theme">ART</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="music2" href="#cause">MUSIC</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="gaming2" href="#sponsors">GAMING</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="lit2" href="#team">LITERATURE</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="drama2" href="#team">DRAMA</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="quiz2" href="#team">QUIZ</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="design2" href="#team">DESIGN</a>
+                </li>
+                <li class="ml-4 social-icons" id="social" style="position:absolute;display:block;bottom:1%;">
+                    <span><a href="https://www.instagram.com/samgatha/?hl=en" target="_blank"><img style="width:51x;height:49px;margin-right: 5vw;"
+                        class="insta" src="./img/insta.png"></a> </span>
+            <a href="https://www.facebook.com/samgathaatiiitdm/" target="_blank"><img style="width:30px;height:49px;margin-left:-4vw;"
+                    class="fb" src="./img/fb.png"></a>
+                    <!-- <a href="#" target="_blank"><img style="width:60px;height:49px;padding:5px;" src="./img/Twitter.png"></a> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sam-logo">
+        <a href="index.html"> <img src="img/samlogo.png" alt="" style="position:fixed;"> </a>
+    </div>
+
+    <div class="hamburger-icon">
+        <img id="icon" src="img/rightham.png" onclick="changeColor()"/>
+    </div>
+
+    <nav id="nav">
+        <div class="ham-div">
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">1</span></div>
+                <div class="col-6"><a class="ham-menu" href="index.html" style="text-decoration:none">HOME</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">2</span></div>
+                <div class="col-6"><a class="ham-menu" href="#" style="text-decoration:none">EVENTS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">3</span></div>
+                <div class="col-6"><a  href="proshows2.html" class="ham-menu" style="text-decoration:none">PROSHOWS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">4</span></div>
+                <div class="col-6"><a href="team.html" class="ham-menu" style="text-decoration:none">TEAMS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">5</span></div>
+                <div class="col-6"><a href="https://drive.google.com/file/d/1SBsV7xj176LTbFT5TJu2-sgQxW9F11ea/view?usp=sharing" class="ham-menu" style="text-decoration:none">SCHEDULE</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">6</span></div>
+                <div class="col-6"><a class="ham-menu" href="sponsors.html" style="text-decoration:none">SPONSORS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">7</span></div>
+                <div class="col-6"><a class="ham-menu" href="workshops.html" style="text-decoration:none">WORKSHOPS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">8</span></div>
+                <div class="col-6"><a class="ham-menu reg" href="registration.html" style="text-decoration:none">REGISTER</a></div>
+            </div>
+        </div>
+        <div class="ham-social-media">
+            <span><a href="https://www.instagram.com/samgatha/?hl=en" target="_blank"><img style="width: 12vw;height: auto;margin-left: 5vw;"
+                         class="insta" src="./img/insta.png"></a> </span>
+            <a href="https://www.facebook.com/samgathaatiiitdm/" target="_blank"><img style="width:7vw;height:auto; margin-left: 2vw;"
+                    class="fb" src="./img/fb.png"></a>
+            <!-- <a href="#" target="_blank"><img style="width:60px;height:49px;padding:5px;" class="twit" src="./img/Twitter.png"></a> -->
+        </div>
+    </nav>
+
+    <!-- Down Hmaburger -->
+
+    <div class="hamburger-icon-bottom" id="bottom-ham" style="position:fixed">
+    </div>
+
+    <div id="overlay-bot" class="stream1" style="z-index:2000;">
+        <div class="still" style="position:absolute;height:100%;width:100%;z-index:3;">
+            <div class="cross1">
+                <!-- <i id="close-bot" class="material-icons" style="font-size:48px;color:white">close</i> -->
+                <div style="position:absolute;">
+                    <img id="close-bot" src="img/mobile/Closeicon.png" class="material-icons" height="30px" width="30px"
+                        style="position:relative;top:-2rem" />
+                </div>
+                <script>
+                    if (screen.width >= 768 && screen.width < 992)
+                        $("#close-bot").css('left', (screen.width) * 0.038 + 'rem');
+                    else
+                        $("#close-bot").css('left', (screen.width) * 0.045 + 'rem');
+                </script>
+                <ul class="navbar-nav">
+                    <li class="nav-item ml-5 ">
+                        <a class="nav-link js-scroll-trigger " id="1" href="#">EVENTS</a>
+                    </li>
+                    <li class="nav-item ml-5 ">
+                        <a class="nav-link js-scroll-trigger " id="2" href="#">PHOTOGRAPHY</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link js-scroll-trigger " id="3" href="#">DANCE</a>
+                    </li>
+                    <li class="nav-item  ml-5">
+                        <a class="nav-link js-scroll-trigger" id="4" href="#">ART</a>
+                    </li>
+                    <li class="nav-item  ml-5">
+                        <a class="nav-link js-scroll-trigger" id="5" href="#">MUSIC</a>
+                    </li>
+                    <li class="nav-item  ml-5">
+                        <a class="nav-link js-scroll-trigger" id="6" href="#">GAMING</a>
+                    </li>
+                    <li class="nav-item  ml-5">
+                        <a class="nav-link js-scroll-trigger" id="7" href="#">LITERATURE</a>
+                    </li>
+                    <li class="nav-item  ml-5">
+                        <a class="nav-link js-scroll-trigger" id="8" href="#">DRAMA</a>
+                    </li>
+                    <li class="nav-item  ml-5">
+                        <a class="nav-link js-scroll-trigger" id="9" href="#">QUIZ</a>
+                    </li>
+                    <li class="nav-item  ml-5">
+                        <a class="nav-link js-scroll-trigger" id="10" href="#">DESIGN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="rulebook" style="position:fixed;">
+        <a href="https://drive.google.com/open?id=19doA-o57nI8Mc-NgL9fgfApybkMl1I2C" target="_blank"><img src="img/Rule Book.png" height="auto" width="60px"/></a>
+    </div>
+
+    <!-- Down hamburger end -->
+
+    <div id="onepage">
+        <div id="homepage">
+            <div class="heading">
+                <h2 class="font">EVENTS</h2>
+            </div>
+            <div id="eventsContent">
+            		<p>Each year Samgatha brings to you uniquely themed cultural competitions<br> in various categories attracting participants from all around the state.<br>
+                        Welcome to your fill of limitless fun, endless excitement,<br> an opportunity to unleash your inner-self and win big.</p>
+            </div>
+            <div class="arrowdown" id="d1">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+
+        <!-- Photography -->
+
+        <div id="photography">
+            <div class="heading">
+                <h2 class="font">PHOTOGRAPHY</h2>
+            </div>
+            <div class="arrowup" id="u1">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 p1">
+                        <img id="photo1" src="img/hoverevents/Photography/Group 168.png" />
+                    </div>
+                    <div class="col-sm-4 p2">
+                        <img id="photo3" src="img/hoverevents/Photography/Group 167.png" />
+                    </div>
+                    <div class="col-sm-4 p3">
+                        <img id="photo4" src="img/hoverevents/Photography/Group 169.png" />
+                    </div>
+                </div>
+            </div>
+            <!-- Overlay Display -->
+            <div id="overlay" class="stream">
+                <div class="cross">
+                      <div class="event-play">
+                        <h2>CREATIVE CONNECT</h2>
+                    </div>
+                    <i id="close" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content1">
+                        <h3>Sorry, this event has been cancelled.</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay1" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/YQLfHhXsL3N8mmYc2"> <button class="register">REGISTER</button></a>
+                    <span><a href="https://www.instagram.com/imagix.iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>
+                        <div class="event-play">
+                        <h2>PHOTON</h2>
+                    </div>
+                    <i id="close1" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content2">
+                        <h3>ABOUT</h3>
+                        <p>A picture tells a thousand tales, each one never told before. Phase through the events of
+                            our
+                            fest and freeze the moments that talk to you the most!</p>
+                        <!-- <h3>PRIZES</h3> -->
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Read the General Rules and Photo Specifications carefully.</li>
+                                <li>This is a live photography competition.</li>
+                                <li>One person can submit a maximum of 3 entries.</li>
+                                <li>This event will happen for 3 days and the winner will be announced for each day.</li>
+                                <li>The photos taken must be from 9:00 A.M - 9:00 P.M each day. Only those photos are
+                                    eligible for submission.</li>
+                                <li>The entries have to be submitted from 9:00 P.M-10:00 P.M at the photography desk
+                                    each day.</li>
+                            </ul>
+                        </div>
+                        <h3>PRIZES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <p> Prize Pool Upto Rs. 6500.</p>
+                            <p>* Subject to number of participants</p>
+                        </div>
+                        <h3>GENERAL RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>The photography contests are INDIVIDUAL contests.</li>
+                                <li>Entries with offensive or inappropriate content or those which promote a specific brand will be disqualified. </li>
+                                <li>The photograph submitted must be original, genuine work of the participant.</li>
+                                <li>Copyrights of the picture will stay with the photographer. However, the pictures can be used for publicity of any event for our college.  </li>
+                                <li>Under any circumstances, entries once submitted cannot be changed or modified.</li>
+                                <li>Please read the photo specifications carefully. Failing to adhere with the format will lead to disqualification.</li>
+                                <li>Judge’s decision is final.</li>
+                            </ul>
+                        </div>
+                        <h3>Photo Specifications</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Image should be in JPEG format only.</li>
+                                <li>Total file size must be less than 30MB.  </li>
+                                <li>EXIF Data of the picture must remain intact.</li>
+                                <li>Photographs must not have any names, signatures, borders, personal logos or watermarks. </li>
+                                <li>Post processing of the image is allowed but changes like modification of the background and other similar manipulation will lead to disqualification. </li>
+                                <li>No restrictions on the type of camera that can be used.</li>
+                            </ul>
+                        </div>
+                        <h3>Contact</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <p>Aditya-9962968867<br>Areef- 8124814999/9944429513</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay2" class="stream">
+                <div class="cross">
+                    <a href="registration.html"> <button class="register">REGISTER</button></a>
+                    <span><a href="https://www.instagram.com/imagix.iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>
+                    <div class="event-play">
+                        <h2>HOCUS FOCUS</h2>
+                    </div>
+                    <i id="close2" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content3">
+                        <h3>ABOUT</h3>
+                        <p>Resurrect the times of polaroids, darkrooms and roll cameras. Bring out the looking glass of
+                            sepia and light leaks, for history beckons thy name.</p>
+                        <h3>RULES</h3>
+                        <!-- <h3>RULES</h3> -->
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Read the General Rules and Photo Specifications carefully.</li>
+                                <li>The theme for this online competition is “Reminiscent”.</li>
+                                <li>One person can submit a maximum of 2 entries.</li>
+                                <li>The entries have to be emailed to <a href="mailto:iiitdmtv@gmail.com">iiitdmtv@gmail.com​</a>
+                                    . Email the picture along with Instagram ID and Payment screenshot. The picture will be posted on the official photography page of IIITDM Kancheepuram, @imagix.iiitdm and the entrant will be tagged. The picture with maximum likes at March 1, 12:00 AM will be declared as winner. </li>
+                                <li>No restriction in timing..can be submitted on or before March 1st</li>
+                            </ul>
+                        </div>
+                        <h3>PRIZES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <p>1st place : prizes worth Rs.1500<br> 2nd place : prizes worth Rs.700<br>* Subject to number of participants</p>
+                        </div>
+                        <h3>GENERAL RULES</h3>
+                        <!-- <h3>RULES</h3> -->
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>The photography contests are INDIVIDUAL contests.</li>
+                                <li>Entries with offensive or inappropriate content or those which promote a specific brand will be disqualified. </li>
+                                <li>The photograph submitted must be original, genuine work of the participant.</li>
+                                <li>Copyrights of the picture will stay with the photographer. However, the pictures can be used for publicity of any event for our college.  </li>
+                                <li>Under any circumstances, entries once submitted cannot be changed or modified.</li>
+                                <li>Please read the photo specifications carefully. Failing to adhere with the format will lead to disqualification.</li>
+                                <li>Judge’s decision is final.</li>
+                            </ul>
+                        </div>
+                        <h3>Photo Specifications</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Image should be in JPEG format only.</li>
+                                <li>Total file size must be less than 30MB.  </li>
+                                <li>EXIF Data of the picture must remain intact.</li>
+                                <li>Photographs must not have any names, signatures, borders, personal logos or watermarks. </li>
+                                <li>Post processing of the image is allowed but changes like modification of the background and other similar manipulation will lead to disqualification. </li>
+                                <li>No restrictions on the type of camera that can be used.</li>
+                            </ul>
+                        </div>
+                        <h3>Contact</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                                <p>Aditya-9962968867<br>Areef- 8124814999/9944429513</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrowdown" id="d2">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+
+        <!-- Dance -->
+
+        <div id="dance">
+            <div class="heading">
+                <h2 class="font">DANCE</h2>
+            </div>
+            <div class="arrowup" id="u2">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 dance1">
+                        <img id="dance1" src="img/hoverevents/Dance/Group 464.png" />
+                    </div>
+                    <div class="col-sm-4 dance2">
+                        <img id="dance3" src="img/hoverevents/Dance/Group 465.png" />
+                    </div>
+                    <div class="col-sm-4 dance3">
+                        <img id="dance4" src="img/hoverevents/Dance/Group 466.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="overlay3" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/8cdULOTVF2sLTgJ62"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/footlights_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>IMPULSE</h2>
+                    </div>
+                    <i id="close3" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                	<div class="inside-nav" id="content4">
+                        <h3>ABOUT</h3>
+                        <p>Calling all the dancers to impress us with their rocking rhythms and toe tapping tunes.Weave magic with your mesmerizing moments! Come and showcase your talent  </p>
+                        <h3>PRIZES</h3>
+                          <div style="display: inline-flex; margin-left:30px;">
+                        <p>1st place : Prizes worth Rs.5000<br>2nd place : Prizes worth Rs.3,000</p>
+                        <p>* Subject to number of participants</p>
+                      </div>
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                                <ul style="text-align:left;">
+                                   <li>It is an individual event.
+                                   The time limit of the performance is 3-5 minutes.</li>
+                                    <li>This event consists of 2 rounds.</li>
+                                    <li>All forms except classical dance are accepted.</li>
+                                     <li>A college can have multiple participants.</li>
+                                       <li>The order of appearance on stage for the competition will be decided by
+                                        a lucky draw just prior to the event. No changes will be entertained
+                                           thereafter.</li>
+                                       <li>The participant is expected to bring the audio track they are performing on,
+                                          in a USB, in MP3 format and keep a backup with him/her at all times.</li>
+                                         <li>Decision of the judges is final and binding. Any act of misconduct will lead
+                                    to immediate disqualification.</li>
+                                    <li>SAM ID/Online Registration is compulsory.</li>
+                                </ul>
+                            </div>
+                            <h3>Contact</h3>
+                            <div style="display: inline-flex; margin-left:30px;">
+                                    <p>Rishi-7995227261<br>Chinmaie- 7550167348</p>
+                            </div>
+                            buttonz
+                    </div>
+                </div>
+            </div>
+            <div id="overlay4" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/i2CkiFN7P2ZQiwUu2"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/footlights_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>TEAM UP!</h2>
+                    </div>
+                    <i id="close4" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                	<div class="inside-nav" id="content5">
+                        <h3>ABOUT</h3>
+                        <p>Just waiting for the opportunity to let your dancing explode on stage to the cheers of the crowd? Gather your team,bust out those moves and give it all you’ve got in this dance war.</p>
+                        <h3>PRIZES</h3>
+                        <p>1st place: Prizes worth Rs.15,000<br>2nd place : Prizes worth Rs.10,000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                              <li>The team should consist of 10-25 members</li>
+                             <li>The time limit of the performance is 10-12 minutes (including setup).
+                                 Negative marking will be allotted on exceeding the time limit.</li>
+                              <li>It consists of 1 round.</li>
+                             <li>All forms except classical dance are accepted.</li>
+                            <li>A college can have multiple teams for the event provided there is no
+                            common team member between any two teams.</li>
+                              <li>The order of appearance on stage for the competition will be decided by
+                               a lucky draw just prior to the event. No changes will be entertained
+                              thereafter.</li>
+                                <li>The team is expected to bring the audio track they are performing on, in a
+                              USB, in MP3 format and keep a backup with them at all times.</li>
+                         <li>Decision of the judges is final and binding. Any act of misconduct will lead
+                             to immediate disqualification.</li>
+                            </ul>
+                        </div>
+                        <h3>Contact</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                                <p>Rishi-7995227261<br>Chinmaie- 7550167348</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay5" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/QYOdGXN5RkzaVXcH3"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/footlights_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>EASTERN</h2>
+                    </div>
+                    <i id="close5" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                	<div class="inside-nav" id="content6">
+                        <h3>ABOUT</h3>
+                        <p>Replete with a rigid set of rules, yet creative and imaginative, classical dance has always been
+							precious to us Indians, especially down south. We welcome to Samgatha, either alone or as a
+							group, those who have been enchanted by these dance forms, to come cast your spells on us!</p>
+                        <h3>PRIZES</h3>
+                        <p>Prizes upto Rs.20000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                              <li>The team size could be from 10-25 members.</li>
+<li>The time limit of the performance is 10-12 minutes.</li>
+<li>This event consists of 1 round.</li>
+ <li>It is a theme based dance event.</li>
+<li>A college can have multiple teams for the event provided there is no
+common team member between any two teams.</li>
+<li>The order of appearance on stage for the competition will be decided by
+a lucky draw just prior to the event. No changes will be entertained
+thereafter.</li>
+<li>The team is expected to bring the audio track they are performing on, in a
+USB, in MP3 format and keep a backup with them at all times.</li>
+<li>Decision of the judges is final and binding. Any act of misconduct will
+lead to immediate disqualification.</li>
+                            </ul>
+                        </div>
+                        <h3>Contact</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                                <p>Rishi-7995227261<br>Chinmaie- 7550167348</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrowdown" id="d3">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+
+
+        <!-- art -->
+
+        <div id="art">
+            <div class="heading">
+                <h2 class="font">ART</h2>
+            </div>
+            <div class="arrowup" id="u3">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 a1">
+                        <script src="js/pacman.js"></script>
+                        <img id="art1" src="img/hoverevents/Art/Group 510.png" />
+                    </div>
+                    <div class="col-sm-4 a2">
+                        <img id="art3" src="img/hoverevents/Art/Group 511.png" />
+                    </div>
+                    <div class="col-sm-4 a3">
+                        <img id="art4" src="img/hoverevents/Art/Group 512.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="overlay6" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/zPy3rRjWh2nJBn2v1"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/artclub_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>SOAP CARVING</h2>
+                    </div>
+                    <i id="close6" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content7">
+                        <h3>ABOUT</h3>
+                        <p>“Every stone has a statue inside it but it is the task of
+                            the sculptor to discover it.”<br>Here at Samgatha, carve your
+                            heart out on a piece of soap and get your ticket to becoming the next Michelangelo!
+                        </p>
+                        <h3>PRIZES</h3>
+                        <p>1st place : Prizes worth Rs.2,000<br>2nd place : Prizes worth 1,000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                            <li>Event Duration: 2 Hrs</li>
+                            <li> Only use the materials provided.</li>
+                            <li> Topic will be provided on the spot. </li>
+                            <li> Judging will be based on creativity and the amount of detail and the
+                            meaning of the sculpture.</li>
+                          <li> Individual event, first come first serve basis.</li>
+                            <li> No of participants: 20. </li>
+                            <li> SAM ID/Online Registration is compulsory. </li>
+                            </ul>
+                        </div>
+                        <h3>Contact</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                                <p>Rishikesh- 9567935630<br>Adityan- 8182866629</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay7" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/I0INjEmihyzdHMEX2"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/artclub_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>SHADOW ART</h2>
+                    </div>
+                    <i id="close7" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content8">
+                        <h3>ABOUT</h3>
+                        <p>Time flies over us, but always leaves its shadow behind.
+                            It’s time to Impress our judges with the shadows that you have in mind.
+                        </p>
+                        <h3>PRIZES</h3>
+                        <p>Worth Rs. 4000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                              <li>Create a shadow with the material provided on the given theme using
+                              your creative id</li>
+                            <li>Team size- 3. </li>
+                              <li>Only use the materials provided. </li>
+                              <li>Judging will be based on the creativity and how well they use the property
+                              of shadow. </li>
+                            <li> First come first serve basis </li>
+                            <li>No of teams: 20  </li>
+                            <li>SAM ID/Online Registration is compulsory.</li>
+                            </ul>
+                        </div>
+                        <h3>Contact</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                                <p>Rishikesh- 9567935630<br>Adityan- 8182866629</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay8" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/EIV6wOC6ogaYD5fE3"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/artclub_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>FLIPBOOK ANIMATION</h2>
+                    </div>
+                    <i id="close8" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content9">
+                        <h3>ABOUT</h3>
+                        <p>Animation is not the art of drawings that move but the art of
+                            movements that are drawn.<br> Flipbook gives you the perfect opportunity
+                            to impress our judges with your movements on paper and win big!</p>
+                        <h3>PRIZES</h3>
+                        <p>Worth Rs. 3000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                              <li>1. Event duration- 2 hours.</li>
+                              <li>2. Only use the materials provided.</li>
+                              <li>3. Topic will be provided on the spot.</li>
+                              <li>4. Judging will be based on the quality of animation and the story that they
+                              portray.</li>
+                              <li>5. Individual event.</li> <br>
+                              <li>6. First come first serve basis.</li>
+                              <li>7. No of teams- 20.</li>
+                            <li>8. SAM ID/Online Registration is compulsory.</li>
+                            </ul>
+                        </div>
+                        <h3>Contact</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                                <p>Rishikesh- 9567935630<br>Adityan- 8182866629</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrowdown" id="d4">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+
+        <!-- music -->
+
+        <div id="music">
+            <div class="heading">
+                <h2 class="font">MUSIC</h2>
+            </div>
+            <div class="arrowup" id="u4">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 m1">
+                        <img id="music1" src="img/hoverevents/Music/Group 441.png" />
+                    </div>
+                    <div class="col-sm-6 m2">
+                        <img id="music3" src="img/hoverevents/Music/Group 442.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="overlay9" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/IW9LfkP33AGa5tqH3"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/musicclub.iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>ART OF NOISE</h2>
+                    </div>
+                    <i id="close9" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content10">
+                        <h3>ABOUT</h3>
+                        <p>Bring your instruments, let loose your voices and set the stage on fire with
+                            some mind-blowing music and powerful performances in this eclectic battle of
+                            bands.</p>
+                        <h3>PRIZES</h3>
+                        <p>1st place : prizes worth Rs.18,000<br>2nd place : prizes worth Rs.12,000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:25px;">
+                            <ul style="text-align:left;">
+                                <li>The band size is supposed to be 8 members at maximum</li>
+                                <li>Limit performance time to 18 minutes(including setup)</li>
+                                <li>Eastern and western performances are allowed</li>
+                                <li>SAM ID / online registration is a must</li>
+                                <li>Video to be submitted for shortlisting( 5 mins max,send it to ​ <a href="mailto:musicclub.iiitdm@gmail.com​">musicclub.iiitdm@gmail.com​</a>)</li>
+                                <li>Participant can perform only for one band</li>
+                                <li>Extra points for original compositions!</li>
+                                <li>Only a drum kit and keyboard stand will be provided</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay10" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/SDRZzx89F41niscG3"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/musicclub.iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>MIC NITE</h2>
+                    </div>
+                    <i id="close10" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content11">
+                        <h3>ABOUT</h3>
+                        <p>Calling all the musicians-amateurs,professionals and even those wanna-be’s
+                            who have never confessed your passion for singing. Lighten up,shed your fears
+                            and let your voice out on the stage.</p>
+                        <h3>PRIZES</h3>
+                        <p>1st place : prizes worth Rs.4,000<br>2nd place : prizes worth Rs.3,000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:25px;">
+                            <ul style="text-align:left;">
+                                <li>Any genre of music is allowed</li>
+                                <li>SAM ID / online registration is a must: on-spot registration at the last moment will
+                                    not be allowed</li>
+                                <li>Video to be submitted for shortlisting( 4 mins max,send it to ​ <a href="mailto:musicclub.iiitdm@gmail.com​">musicclub.iiitdm@gmail.com​</a>)</li>
+                                <li>One submission per participant</li>
+                                <li>Final performance should be under 5 minutes</li>
+                                <li>Particiapant may use a karaoke or any accompanying instrument(played by him/her or
+                                    another person) though only vocals will be judged.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrowdown" id="d5">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+
+        <!-- gaming -->
+
+        <div id="gaming">
+            <div class="heading">
+                <h2 class="font">GAMING</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 g1">
+                        <img id="game1" src="img/hoverevents/Gaming/Group 421.png" />
+                    </div>
+                    <div class="col-sm-4 g2">
+                        <img id="game2" src="img/hoverevents/Gaming/Group 445.png" />
+                    </div>
+                    <div class="col-sm-4 g3">
+                        <img id="game3" src="img/hoverevents/Gaming/Group 444.png" />
+                    </div>
+                    <div id="pacman" style="display: none;"></div>
+                </div>
+            </div>
+            <div class="arrowup" id="u5">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div id="overlay11" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/kAVecscbPrBsa2YB3"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/iiitdm.esports/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>CSGO</h2>
+                    </div>
+                    <i id="close11" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content12">
+                        <h3>ABOUT</h3>
+                        <p>One shot. One Kill. No luck. Pure skill.
+                            Gather your troupe and make sure no blood does spill.
+                        </p>
+                        <h3>PRIZES</h3>
+                        <p>Worth Rs.60000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Teams must register to the tournament at the Hospitality Desk or Online. </li>
+                                <li>Entry for each team Rs. 1750 (5x350) and all the team HAS TO REGISTER.</li>
+                                <li>All matches will be played on the latest game patch of “Counter-Strike: Global Offensive”.</li>
+                                <li>A knife round will determine who will start as Counter-Terrorists (CT) and as Terrorists (T).</li>
+                                <li>A match consists of 30 rounds. Each team has to play 15 rounds as Counter-Terrorists (CT) and 15 rounds as Terrorists (T). The team winning 16 rounds out of 30 wins the match. </li>
+                                <!-- <li></li>
+                                <li></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay12" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/6GSrYvPkKxuAG8hA2"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/iiitdm.esports/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>FIFA</h2>
+                    </div>
+                    <i id="close12" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content13">
+                        <h3>ABOUT</h3>
+                        <p>Experience what it takes to control your favorite player!
+                            Play for the pride of your jersey and shoot for victory!
+                        </p>
+                        <h3>PRIZES</h3>
+                        <p>1st-2k. 2nd-1.5K</p>
+                        <p>* Subject to number of participants</p>
+
+                        <!-- <ul>
+                        	<li>1st-2k. 2nd-1.5K</li>
+                        </ul> -->
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>The game version that will be played is FIFA 19(1v1).(Mode of matches will be decides by the organizers).</li>
+                                <li>Knockout round halftime - 5mins.</li>
+                                <li>It is highly advised to bring YOUR OWN controller and keyboard. Laptop will be provided.</li>
+                                <li>Opponents will be drawn in a fair manner by us.</li>
+                                <li>Registration should be done online/hospitality (Passport- 350).</li>
+                                <li>Participants will be given only limited amount of prep time.(configuring,managing,etc..)</li>
+                                <li>The rules may be altered under special circumstances.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay13" class="stream">
+                <div class="cross">
+                 <button id="id3"class="register" onclick="myFunction()">REGISTER</button>
+                    <a href="https://goo.gl/forms/YFMbbUZonzQgX54X2"><button class="register1"
+                    style="display: none" id="id1" >SOLO</button></a>
+                    <a href="https://goo.gl/forms/7KA1MJpJbiWJqgv43"><button class="register2"
+                    style="display: none" id="id2">SQUAD</button></a>
+                                         <span><a href="https://www.instagram.com/iiitdm.esports/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>PUBG</h2>
+                    </div>
+                    <i id="close13" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content14">
+                        <h3>ABOUT</h3>
+                        <h5>SOLO</h5>
+                        <p>Those who fly solo have the strongest wings.
+                            Get down to the island and get ready to Battle Royale
+                        </p>
+                        <h5>SQUAD</h5>
+                        <p>The island's waiting to see some blood.Guide your gang to the top and taste the chicken dinner.
+                        </p>
+                        <h3>PRIZES</h3>
+                        <ul>
+                        	<li>FOR SQUAD-Each kill is worth Rs.25.(Rs.25 per kill). Screenshots should be sent as proof.</li>
+                        	<li>FOR SQUAD- 1st place - 1k per team . 2nd place - 750 per team</li>
+                        	<li>FOR SOLO- Each kill is worth Rs.25.(Rs.25 per kill). Screenshots should be sent as proof.</li>
+                        	<li>FOR SOLO- 1st place - 500 per person. 2nd place - 400 per person. 3rd place - 300 per person.</li>
+                        </ul>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Emulators are strictly not allowed (Will be kicked immediately from the room).</li>
+                    			<li>Squads and Solo. No. of games will be decided depending on the schedule.</li>
+                    			<li>Mode - TPP. Map - Erangel.</li>
+                    			<li>First come First service. All the Registration will online via paytm/tez only.</li>
+                    			<li>For Squad Entry Rs.200/team</li>
+                    			<li>For Solo Entry Rs.50/person</li>
+                    			<li>Players from other college are allowed.</li>
+                    			<li>Participants are requested to take screenshot at the end to claim prizes.</li>
+                    			<li>Registration should be done online as its an online tournament.</li>
+                    			<li>All the rules can be altered whenever by the eSports Club without any notice if any time constraint is faced.</li>
+                    			<li>Google form will be added soon.</li>
+                    			<!-- <li></li>
+                    			<li></li>
+                    			<li></li>
+                    			<li></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrowdown" id="d6">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+
+        <!-- lit -->
+
+        <div id="literature">
+            <div class="heading">
+                <h2 style="color:#515055 ;padding-top:10px" class="font">LITERATURE</h2>
+            </div>
+            <div class="arrowup" id="u6">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 li1">
+                        <img id="litre1" src="img/hoverevents/Literature/Group 448.png" />
+                    </div>
+                    <div class="col-sm-4 li2">
+                        <img id="litre2" src="img/hoverevents/Literature/Group 449.png" />
+                    </div>
+                    <div class="col-sm-4 li3">
+                        <img id="litre3" src="img/hoverevents/Literature/Group 447.png" />
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Lit overlayes start -->
+
+
+            <div id="overlay31" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/eRMGzEMecjXS0iZa2"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/the_illiterati_club/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>LAWYER UP</h2>
+                    </div>
+                    <i id="close31" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content15">
+                        <h3>ABOUT</h3>
+                        <p>Quick wit, strong rebuttals, and good articulation is all the evidence you’ll need to get us to
+							pronounce your verdict.
+						</p>
+                        <h3>PRIZES</h3>
+                        <p>1st place : prizes worth Rs.2000</p>
+                        <p>2nd place : prizes worth Rs.1000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>This is a team event with two people per team.</li>
+                                <li>It will consist of multiple rounds.</li>
+                                <li>It will test the debating skills of the participants.</li>
+                                <li>Each team will be given ten minutes preparation time after being given their
+                                    topics.</li>
+                                <li>Total event duration will be 1.5-2 hours.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay32" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/MVQ4e6eP4RYpU7q12"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/the_illiterati_club/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>RESONANCE</h2>
+                    </div>
+                    <i id="close32" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content16">
+                        <h3>ABOUT</h3>
+                        <p>Can you get us to see what you think ?
+						   Come. Write. Conquer. Because a pen is always mightier than a sword.</p>
+                        <h3>PRIZES</h3>
+                        <p>1st place : prizes worth Rs.2000</p>
+                        <p>2nd place : prizes worth Rs.1000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>This is an individual event.</li>
+                                <li>It will consist of multiple rounds of 10-15 minutes each.</li>
+                                <li>Total event duration will be around 1 hour.</li>
+                                <li>Different writing prompts will be given for each round.</li>
+                                <li>The prompts may be visual, auditory, or tactile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay33" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/s0REPMdj4o8JXUpE2"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/the_illiterati_club/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>ELOQUENT</h2>
+                    </div>
+                    <i id="close33" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content17">
+                        <h3>ABOUT</h3>
+                        <p>In this competitive speaking event of Samgatha, go back in time, speak to the wise old men in
+							front of you and catapult yourself to glory. Think on your feet, speak from your heart, and if you
+							want to talk your way into victory - Improvise. Adapt. Overcome.
+						</p>
+                        <h3>PRIZES</h3>
+                        <p>1st place : prizes worth Rs.2000</p>
+                        <p>2nd place : prizes worth Rs.1000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>This is an individual event.</li>
+                                <li>It will consist of 3 rounds.</li>
+                                <li>The speaking skills of the participants will be tested in different games, such
+                                    as block and tackle, shipwreck, etc.</li>
+                                <li>Total event duration will be around 1.5 hours.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- lit overlays done -->
+
+
+            <div class="arrowdown" id="d7">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+        <<div id="drama">
+            <div class="heading">
+                <h2 class="font">DRAMA</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 drama1">
+                        <img id="drama17" src="img/hoverevents/Drama/Group 387.png" />
+                    </div>
+                    <div class="col-sm-4 drama2">
+                        <img id="drama18" src="img/hoverevents/Drama/Group389.png" />
+                    </div>
+                    <div class="col-sm-4 drama3">
+                        <img id="drama19" src="img/hoverevents/Drama/Group 388.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="arrowup" id="u7">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div id="overlay17" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/N24Z3lBTfdjh8sCG2"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/_stagestruck.iiitdm_/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>SPUR OF THE MOMENT</h2>
+                    </div>
+                    <i id="close17" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                	<div class="inside-nav" id="content18">
+                        <h3>ABOUT</h3>
+                        <p>We all have heard a lot about ‘living in the moment’. Now, it’s time to ‘<span style="color:blanchedalmond">create the moment</span>’.
+                                Show your spontaneity and flaunt the ‘Acting ka Keeda’ present in you.</p>
+                        <p>Welcome to <span style="color:blanchedalmond">StageStruck’s Spur-of-the-moment</span>, the Improv event of <span style="color:blanchedalmond">Samgatha 2k19</span></p>
+                        <p>The participants will be given a situation on stage and they are required to perform based
+                                on the situation. Multiple rounds will be conducted based on the number of participating
+                                teams.</p>
+                        <h3>Registration Fees</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                                <p> The participants need to have passports to participate in this event. </p>
+                        </div>
+                        <h3>PRIZES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                                <p> 1st place : prizes worth Rs. 1,500.<br> 2nd place : prizes worth Rs. 1,000.</p>
+                                <p>* Subject to number of participants</p>
+
+                        </div>
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Team Size : <span style="color:blanchedalmond;">2 to 4 members per team </span></li>
+                                <li>Language : <span style="color:blanchedalmond;"> The act can be in any of the following languages<ul style="padding-left:3vw;">
+                                        <li style="color:blanchedalmond;">English</li>
+                                        <li style="color:blanchedalmond;">Hindi</li>
+                                        <li style="color:blanchedalmond;">Tamil</li>
+                                        <li style="color:blanchedalmond;">Telugu</li>
+                                    </ul></span></li>
+                                <li>The performed scene should last between 2-5 mins</li>
+                                <li>Limited props will be provided</li>
+                            </ul>
+                        </div>
+                        <h3>CONTACT</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <p>Ajay Narayanan (+91-9445837953)<br/>Ankita Chandra (+91-6379601945)</p>
+                        </div>
+                        <h3>Judging Criteria</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Acting and dialogue delivery
+                                </li>
+                                <li>Expressions and body language</li>
+                                <li>Characterization, teamwork, wit, believability and the ability to create the
+                                        environment
+                                </li>
+                            </ul>
+                        </div>
+                        <p>The rules are flexible and the criteria can be changed according to the
+                                convenience of judges.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay18" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/WJMgOZGa8FvVYCNP2"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/_stagestruck.iiitdm_/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>TALE OF THE STREETS</h2>
+                    </div>
+                    <i id="close18" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                	<div class="inside-nav" id="content19">
+                        <h3>ABOUT</h3>
+                        <p>There’s definitely way too much drama in all of our lives. For a change, let’s put all that behind us
+                                and focus on what’s happening on the streets, shall we?</p>
+                                <p>Welcome to <span style="color:blanchedalmond">StageStruck’s Tale of the Streets </span>, the Street Play event of <span style="color:blanchedalmond" >Samgatha 2k19</span>.
+                        <h3>Registration Fees</h3>
+                        <div style="display: inline-flex; margin-left:10px;">
+                            <p> Rs 1,500</p>
+                        </div>
+                        <h3>PRIZES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <p> 1st place : prizes worth Rs. 7,000.<br> 2nd place : prizes worth Rs. 5,000.</p>
+                            <p>* Subject to number of participants</p>
+
+                        </div>
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Theme of play : <span style="color:blanchedalmond;">No restriction on the themes.</span></li>
+                                <li>Team Size :<span style="color:blanchedalmond;"> Minimum of 10 to maximum of 20.
+                                    </span></li>
+                                <li>Language : <span style="color:blanchedalmond;">The play can be in - English, Hindi, Tamil.</span></li>
+                                <li>Time Limit : <span style="color:blanchedalmond;">The team should perform for a minimum of 10 minutes to
+                                        maximum of 20 mins.</span></li>
+                            </ul>
+                        </div>
+                        <h3>Contact</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <p>Ajay Narayanan (+91-9445837953)<br/>Ankita Chandra (+91-6379601945)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay19" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/YlPhtryCB4dV0nvF2"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/_stagestruck.iiitdm_/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>MAYASHRISHTI</h2>
+                    </div>
+                    <i id="close19" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                	<div class="inside-nav" id="content20">
+                        <h3>ABOUT</h3>
+                        <p>It's time to munch on some Chocolate frogs, drink a few butter beers, wield the Elder
+                            wand and use the Quick quotes, Quill to create magic.</p>
+                        <p>Welcome to <span style="color:blanchedalmond">StageStruck’s Mayashristi </span>, the on-stage event of <span style="color:blanchedalmond" >Samgatha 2k19</span>.
+                            It will be the crème de la crème of the opportunities to come, showcase your talents and
+                            create an exotic world on stage.</p>
+                        <h3>Registration Fee</h3>
+                        <p> Rs 1,500</p>
+                        <h3>PRIZES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <p> 1st place : prizes worth Rs. 8,000.<br>2nd place : prizes worth Rs. 6,000.</p>
+                            <p>* Subject to number of participants</p>
+
+                        </div>
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Theme of play : <span style="color:blanchedalmond;"> No restriction on the themes.
+                                    Type of drama includes everything except Street play.</span></li>
+                                <li>Team Size : <span style="color:blanchedalmond">Minimum of 3 to maximum of 15.</span></li>
+                                <li>Language : <span style="color:blanchedalmond">The drama can be in - English, Hindi, Tamil, Telugu</span></li>
+                                <li>Time Limit : <span style="color:blanchedalmond">The team should perform for a minimum of 15 minutes to a
+                                    maximum of 30 mins (including the set-up time).</span></li>
+                            </ul>
+                        </div>
+                        <h3>CONTACT</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <p>Ajay Narayanan (+91-9445837953)<br/>Ankita Chandra (+91-6379601945)</p>
+                        </div>
+                        <h3>Judging Criteria</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Acting :
+                                    <ul style="padding-left:3vw;">
+                                        <li style="color:blanchedalmond;">Confident, sustained and convincing characters?</li>
+                                        <li style="color:blanchedalmond;">Controlled and appropriate use of facial expression, space and
+                                            gesture?</li>
+                                    </ul>
+                                </li>
+                                <li>Script :
+                                    <ul style="padding-left:3vw;">
+                                        <li style="color:blanchedalmond;">Dialogue that is audible, clear and appropriate to character?</li>
+                                        <li style="color:blanchedalmond;">Bonus points for the uniqueness of the script</li>
+                                    </ul></li>
+                                <li>Message  :
+                                    <ul style="padding-left:3vw;">
+                                        <li style="color:blanchedalmond;">How successful is the team at exploring the theme they are
+                                                portraying?</li>
+                                        <li style="color:blanchedalmond;">Are the themes and messages embedded within the narrative?</li>
+                                    </ul>
+                                </li>
+                                <li>Staging & Technical Elements:
+                                    <ul style="padding-left:3vw;">
+                                        <li style="color:blanchedalmond;">Does costuming enhance the characters and meaning?</li>
+                                        <li style="color:blanchedalmond;">Are the actors confident in their interaction with technical elements?</li>
+                                    </ul>
+                                </li>
+                                <li> Points will be reduced ifthe team doesn’t adhere to the time limit or if
+                                        there is any indecency related to the costumes</li>
+                            </ul>
+                        </div>
+                        <p>The rules are flexible and the criteria can be changed according to the
+                                convenience of judges.</p>
+                    <!--  <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Read the General Rules and Photo Specifications carefully.</li>
+                                <li>The theme for this online competition is “Reminiscent”.</li>
+                                <li>One person can submit a maximum of 2 entries.</li>
+                                <li>The entries have to be emailed to <a href="mailto:iiitdmtv@gmail.com">iiitdmtv@gmail.com​</a>
+                                    . Email pic and insta id, pic will be
+                                    posted on insta page with tag, time will be given till March 1 to publicize the
+                                    image. Max
+                                    likes will be declared as winner</li>
+                                <li>No restriction in timing..can be submitted on or before March 1st</li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="arrowdown" id="d8">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+
+        <!-- quiz -->
+
+        <div id="quiz">
+            <div class="heading">
+                <h2 class="font">QUIZ</h2>
+            </div>
+            <div class="arrowup" id="u8">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 q1">
+                        <img id="quiz20" src="img/hoverevents/Quiz/Group 474.png" />
+                    </div>
+                    <div class="col-sm-4 q2">
+                        <img id="quiz21" src="img/hoverevents/Quiz/Group 476.png" />
+                    </div>
+                    <div class="col-sm-4 q3">
+                        <img id="quiz22" src="img/hoverevents/Quiz/Group 475.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="overlay20" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/oJGnOT5wQT2vbL2j1"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/quriosity_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>FANDOM</h2>
+                    </div>
+                    <i id="close20" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content21">
+                        <h3>ABOUT</h3>
+                        <p>Albus Percival Wulfric Brian Dumbledore. Were you aware of that? Or perhaps, you are Mr.
+                            Know-It-All when it comes to the Mad Titan. Are you the biggest amongst the biggest, best
+                            among the best of fans out there? Make the podium at the FANDOM Quiz, and show us your
+                            might!</p>
+                        <h3>PRIZES</h3>
+                        <p>1st place : prizes worth Rs.2,500<br>2nd place : prizes worth Rs.1,500</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Teams of 2 (strictly 2)</li>
+                                <li>No restriction on the number of teams participating from a college
+                                    </li>
+                                <li>Both the members of the team must have their SAMID for registrations
+                                    </li>
+                                <li>Prelims would be a written round and then followed by finals.</li>
+                                <li> The top 8 teams would be selected for the Finals  </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay21" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/mpDdtxg3DUI6JtUJ2"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/quriosity_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>SLAM</h2>
+                    </div>
+                    <i id="close21" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content22">
+                        <h3>ABOUT</h3>
+                        <p>If the number of yearbooks you have lined up is your age, this is the place for you. Compete
+                            against the most talented to score questions on S ports, L itt, A rt and M ovies. SLAM your way
+                            to
+                            victory!</p>
+                        <h3>PRIZES</h3>
+                        <p>1st place : prizes worth Rs.2,500<br>2nd place : prizes worth Rs.1,500</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Teams of 3 or 2</li>
+                                <li>No restriction on the number of teams participating from a college
+                                    </li>
+                                <li>All the members of the team must have their SAMID for registrations
+                                    </li>
+                                <li>Prelims would be a written round and then followed by finals.</li>
+                                <li> The top 8 teams would be selected for the Finals  </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay22" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/amI5MtT6VxnNO6pk1"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/quriosity_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>MEMES</h2>
+                    </div>
+                    <i id="close22" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                    <div class="inside-nav" id="content23">
+                        <h3>ABOUT</h3>
+                        <p>Get your Meme socks on cuz this quiz will blow them away!!! If you love memes, get your
+                            meme vogue ready to answer a question!!</p>
+                        <h3>Prizes</h3>
+                        <p>1st place : prizes worth Rs.1,500<br>2nd place : prizes worth Rs.1,000</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>Rules</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Teams of 2</li>
+                                <li>No restriction on the number of teams participating from a college
+                                    </li>
+                                <li>All the members of the team must have their SAMID for registrations
+                                    </li>
+                                <li>Only one open round (no finals).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrowdown" id="d9">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+
+        <!-- design -->
+
+        <div id="design">
+            <div class="heading">
+                <h2 class="font">DESIGN</h2>
+            </div>
+            <div class="arrowup" id="u9">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 de1">
+                        <img id="design31" src="img/hoverevents/Design/Group 600.png" />
+                    </div>
+                    <div class="col-sm-6 de2">
+                        <img id="design32" src="img/hoverevents/Design/Group 599.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="overlay34" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/JYzZYsU5SMg60Y9v2"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/pixels_gdc_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>DESIGNATHON</h2>
+                    </div>
+                    <i id="close34" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                	<div class="inside-nav" id="content24">
+                        <h3>ABOUT</h3>
+                        <p>Test your professional design skills in this competition. From a full corporate portfolio design to an UI/UX design, take up the challenge on a set of prompts.</p>
+                        <h3>PRIZES</h3>
+                        <p>1st place : prizes worth Rs 2,500 <br> 2nd place : prizes worth Rs 1,500</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>The event will consist of two rounds of 2 hours each.</li>
+                                <li>Team size of 2-4.</li>
+                                <li>A problem statement will be provided on the spot.</li>
+                                <li>First round will based on Branding- the teams will be made to create logo, business cards, letterhead, brochure etc. Judgement will be based on concept, visual appeal, functionality and cohesiveness.</li>
+                                <li>The second round will be based on UI/UX design- the teams will have to make a prototype of the problem statement. Judgement will be based on interaction, Usability, ability to assess the users, Creativity.</li>
+                                <li>50% from each round will be taken to form the total score</li>
+                                <li>Teams should submit the working files along with the jpegs and a report at the end of both rounds</li>
+                            </ul>
+                        </div>
+                        <h3>contact</h3>
+                        <p>Anakha : 9445677042<br>Jeffrey : 9677440972</p>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay35" class="stream">
+                <div class="cross">
+                    <a href="https://goo.gl/forms/E9twVjSBynRaGOs22"> <button class="register">REGISTER</button></a>
+                                         <span><a href="https://www.instagram.com/pixels_gdc_iiitdm/" target="_blank"><img class="instamodal" src="./img/insta.png"></a> </span>                     <div class="event-play">
+                        <h2>ALTER REALITY</h2>
+                    </div>
+                    <i id="close35" class="material-icons">close</i>
+                </div>
+                <div class="overlay-content">
+                	<div class="inside-nav" id="content25">
+                        <h3>ABOUT</h3>
+                        <p>Take a picture on campus. Add your own elements to it (a drawing of a character or anything else)</p>
+                        <h3>RULES</h3>
+                        <div style="display: inline-flex; margin-left:30px;">
+                            <ul style="text-align:left;">
+                                <li>Max 2 entries</li>
+                                <li>The photo used should be taken in the college</li>
+                                <li>Theme : <span style="color:blanchedalmond;">nostalgia</span></li>
+                                <li>Submission : <span style="color:blanchedalmond;"> JPEG file</span></li>
+                                <li>Deadline before&nbsp; 12 AM, 3rd March </li>
+                            </ul>
+                        </div>
+
+                        <h3>PRIZES</h3>
+                        <p>1st place : prizes worth Rs 1,200 <br> 2nd place : prizes worth Rs 700</p>
+                        <p>* Subject to number of participants</p>
+
+                        <h3>contact</h3>
+                        <p>Anakha : 9445677042<br>Jeffrey : 9677440972</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var clickedModal = 0;
+        for (let i = 1; i <=25; i++) {
+            let toppy = document.getElementById('content'+String(i));
+            toppy.addEventListener("onwheel" in document ? "wheel" : "mousewheel", function (e) {
+                if (e.deltaY < 0) {
+                    toppy.scrollBy(0, -8);
+                }
+                if (e.deltaY > 0) {
+                    toppy.scrollBy(0, 8);
+                }
+            });
+        }
+    </script>
+    <script>
+        let ham_check = 0;
+        let list1 = [
+            ['home2', 1],
+            ['photo2', 0],
+            ['dance2', 0],
+            ['art2', 0],
+            ['music2', 0],
+            ['gaming2', 0],
+            ['lit2', 0],
+            ['drama2', 0],
+            ['quiz2', 0],
+            ['design2', 0],
+        ];
+        let list2 = ['d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'd9'];
+        let list3 = ['u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'u7', 'u8', 'u9'];
+        //['li1',0,'#overlay14','#close14'],['li2',0,'#overlay15','#close15'],['li3',0,'#overlay16','#close16'],
+        let list4 = [
+            ['photo1', 0, '#overlay', '#close','#photography'],
+            ['photo3', 0, '#overlay1', '#close1','#photography'],
+            ['photo4', 0, '#overlay2', '#close2','#photography'],
+            ['dance1', 0, '#overlay3', '#close3','#dance'],
+            ['dance3', 0, '#overlay4', '#close4','#dance'],
+            ['dance4', 0, '#overlay5', '#close5','#dance'],
+            ['art1', 0, '#overlay6', '#close6','#art'],
+            ['art3', 0, '#overlay7', '#close7','#art'],
+            ['art4', 0, '#overlay8', '#close8','#art'],
+            ['music1', 0, '#overlay9', '#close9','#music'],
+            ['music3', 0, '#overlay10', '#close10','#music'],
+            ['game1', 0, '#overlay11', '#close11','#gaming'],
+            ['game2', 0, '#overlay12', '#close12','#gaming'],
+            ['game3', 0, '#overlay13', '#close13','#gaming'],
+            ['drama17', 0, '#overlay17', '#close17','#drama'],
+            ['drama18', 0, '#overlay18', '#close18','#drama'],
+            ['drama19', 0, '#overlay19', '#close19','#drama'],
+            ['quiz20', 0, '#overlay20', '#close20','#quiz'],
+            ['quiz21', 0, '#overlay21', '#close21','#quiz'],
+            ['quiz22', 0, '#overlay22', '#close22','#quiz']
+        ];
+        let list5 = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        let list6 = [
+            ['litre1', 0, '#overlay31', '#close31','#literature'],
+            ['litre2', 0, '#overlay32', '#close32','#literature'],
+            ['litre3', 0, '#overlay33', '#close33','#literature'],
+            ['design31', 0, '#overlay34', '#close34','#design'],
+            ['design32', 0, '#overlay35', '#close35','#design']
+        ];
+    </script>
+    <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script> -->
+    <script src="js/index-events.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script> -->
+    <script src="js/active-events.js"></script>
+    <script>
+        for (let i = 0; i < list4.length; i++) {
+            list4[i][1] = 0;
+        }
+        for (let i = 0; i < list6.length; i++) {
+            list6[i][1] = 0;
+        }
+    </script>
+    <script src="js/overlay.js"></script>
+    <!-- <script src="js/pacman.js"></script> -->
+    <script>
+        $("a").hover(function () {
+            if (list1[pos1][0] != $(this).attr('id')) {
+                $(this).css("color", "#F38445");
+            }
+        }, function () {
+            if (list1[pos1][0] != $(this).attr('id')) {
+                $(this).css("color", "white");
+            }
+        });
+    </script>
+    <script>
+    function myFunction() {
+    document.getElementById("id3").style.display = "none";
+    document.getElementById("id1").style.display = "block";
+    document.getElementById("id2").style.display = "block";
+}
+</script>
+</body>
+
+</html>

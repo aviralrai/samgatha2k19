@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/teams2.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+
+    <link rel="icon" href="img/Favicon Square.ico" type="image/x-icon" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+
+    <title>Teams</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div class="device-notification">
+        <img style="width: 150px;" src="img/samlogo.png" />
+        <p class="device-notification--message">Samgatha has so much to offer that we must request you orient your
+            device to
+            portrait or find a larger screen. You won't be disappointed.</p>
+    </div>
+    <div class="sam-logo">
+        <a href="index.html"> <img src="img/samlogo.png" alt="" style="width: 180px;height: auto;margin-left: auto;margin-right: auto;">
+        </a>
+    </div>
+    <div class="hamburger-icon">
+        <img id="icon" src="img/rightham.png" onclick="changeColor()"/>
+    </div>
+    <nav id="nav">
+        <div class="ham-div">
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">1</span></div>
+                <div class="col-6"><a class="ham-menu" href="index.html" style="text-decoration:none">HOME</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">2</span></div>
+                <div class="col-6"><a class="ham-menu" href="events.html" style="text-decoration:none">EVENTS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">3</span></div>
+                <div class="col-6"><a  href="proshows2.html" class="ham-menu" style="text-decoration:none">PROSHOWS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">4</span></div>
+                <div class="col-6"><a href="#" class="ham-menu" style="text-decoration:none">TEAMS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">5</span></div>
+                <div class="col-6"><a href='https://drive.google.com/file/d/1SBsV7xj176LTbFT5TJu2-sgQxW9F11ea/view?usp=sharing' class="ham-menu" style="text-decoration:none">SCHEDULE</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">6</span></div>
+                <div class="col-6"><a class="ham-menu" href="sponsors.html" style="text-decoration:none">SPONSORS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">7</span></div>
+                <div class="col-6"><a class="ham-menu" href="workshops.html" style="text-decoration:none">WORKSHOPS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">8</span></div>
+                <div class="col-6"><a class="ham-menu reg" href="registration.html" style="text-decoration:none">REGISTER</a></div>
+            </div>
+        </div>
+        <div class="ham-social-media">
+            <span><a href="https://www.instagram.com/samgatha/?hl=en" target="_blank"><img style="width: 12vw;height: auto;margin-left: 5vw;"
+                         class="insta" src="./img/insta.png"></a> </span>
+            <a href="https://www.facebook.com/samgathaatiiitdm/" target="_blank"><img style="width:7vw;height:auto; margin-left: 2vw;"
+                    class="fb" src="./img/fb.png"></a>
+            <!-- <a href="#" target="_blank"><img style="width:60px;height:49px;padding:5px;" class="twit" src="./img/Twitter.png"></a> -->
+        </div>
+    </nav>
+
+    <!-- heading title -->
+    <script>
+        //console.log(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+        var x="img/teams/TitleCards/teammobile.png";
+        if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > 425)
+        {
+            x = "img/teams/TitleCards/Header.png"
+        }
+    </script>
+    <div class="heading" style="position:absolute;top:0;z-index:0">
+        <img class="title" id="title1">
+    </div>
+    <script>
+        var anchor = document.getElementById("title1"); 
+        var att = document.createAttribute("src");     
+        att.value = x;       
+        anchor.setAttributeNode(att); 
+    </script>
+
+    <!-- container begin -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="club" src="img/teams/TitleCards/Group879.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-6">
+                <img class="member" src="img/teams/Team/Group 880.png"/>
+            </div>
+            <div class="col-md-6">
+                <img class="member" src="img/teams/Team/Group 881.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="club" src="img/teams/TitleCards/Group 832.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 830.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 829.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 883.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 884.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-4">
+                <img class="member" src="img/teams/Team/Group 885.png"/>
+            </div>
+            <div class="col-md-4">
+                <img class="member" src="img/teams/Team/Group 886.png"/>
+            </div>
+            <div class="col-md-4">
+                <img class="member" src="img/teams/Team/Group 887.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="club" src="img/teams/TitleCards/Group 833.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 834.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 838.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 839.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 843.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 844.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 845.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 846.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 889.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="club" src="img/teams/TitleCards/Group 847.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-4">
+                <img class="member" src="img/teams/Team/Group 848.png"/>
+            </div>
+            <div class="col-md-4">
+                <img class="member" src="img/teams/Team/Group 861.png"/>
+            </div>
+            <div class="col-md-4">
+                <img class="member" src="img/teams/Team/Group 862.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="club" src="img/teams/TitleCards/Group 867.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-6">
+                <img class="member" src="img/teams/Team/Group 868.png"/>
+            </div>
+            <div class="col-md-6">
+                <img class="member" src="img/teams/Team/Group 869.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="club" src="img/teams/TitleCards/Group 870.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col akshay">
+                <img class="member" src="img/teams/Team/Group 871.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="club" src="img/teams/TitleCards/Group 872.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-6">
+                <img class="member" src="img/teams/Team/Group 874.png"/>
+            </div>
+            <div class="col-md-6">
+                <img class="member" src="img/teams/Team/Group 875.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="club" src="img/teams/TitleCards/Group 877.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col akshay">
+                <img class="member" src="img/teams/Team/Group 878.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="club" src="img/teams/TitleCards/PHOTO HEADER.PNG"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col akshay">
+                <img class="member" src="img/teams/Team/Group 882.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="club" src="img/teams/TitleCards/Group 895.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 905.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 906.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 907.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 908.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 909.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 910.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 911.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="member" src="img/teams/Team/Group 911.png"/>
+            </div>
+        </div>
+        <div class="row details">
+            <div class="col-md-6">
+                <img class="member" src="img/teams/Team/Group 912.png"/>
+            </div>
+            <div class="col-md-6">
+                <img class="member" src="img/teams/Team/Group 913.png"/>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

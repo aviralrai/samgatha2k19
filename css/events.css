@@ -1,0 +1,2241 @@
+@font-face {
+  font-family: mynav;
+  src: url(../fonts/nav.ttf);
+}
+
+@font-face {
+  font-family: mynavnum;
+  src: url(../fonts/Vintage\ Warehouse.ttf);
+}
+
+@font-face {
+  font-family: cont;
+  src: url(../fonts/IBMPlexSans-Regular.ttf);
+}
+@font-face {
+  font-family: sunset;
+  src: url(../fonts/register.ttf);
+}
+
+#sideNav.active{
+    visibility:hidden;
+}
+
+#eventsContent{
+  position: absolute;
+  font-size: 20px;
+  font-family: cont;
+  bottom:20rem;
+}
+.instamodal{
+  position: absolute;
+  width: 3rem;
+  height: auto;
+  padding-top:0.5rem;
+  left: 15vw;
+}
+.inside-nav{
+  height: 50vh;
+  overflow-y: scroll;
+  /* overflow-x:hidden; */
+  width: 80%;
+  margin: 4.5rem auto auto auto;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* Scroll bar design */
+
+/* width */
+.inside-nav::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.inside-nav::-webkit-scrollbar-track {
+  visibility:hidden;
+}
+
+/* Handle */
+.inside-nav::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.device-notification{
+  display: none;
+}
+@media screen and (min-width:1440px){
+  #eventsContent{
+    position: absolute;
+    font-size: 20px;
+    font-family: cont;
+    top: 22vw;
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 1022px) and (orientation:landscape) {
+  .device-notification {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: #0c0c0c;
+    z-index: 10000;
+  }
+  .device-notification--message {
+    width: 70%;
+    font-family: cont;
+    color:#fff8ee;
+    margin: 30px 0 0 0;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+#homepage,
+#photography,
+#dance,
+#art,
+#music,
+#gaming,
+#literature,
+#drama,
+#quiz,
+#design {
+  position: absolute;
+}
+
+.sam-logo {
+
+  visibility: visible;
+}
+
+.sam-logo img {
+  position: absolute;
+  width: 180px;
+  top: 3%;
+  left: 1%;
+  z-index: 1035;
+  cursor: pointer;
+  border-radius: 0%;
+  visibility: visible;
+}
+
+#homepage {
+  background-image: url("../img/events/events.jpg");
+  background-size: cover;
+}
+
+#photography {
+  background-image: url("../img/events/photography.jpg");
+  background-size: cover;
+}
+
+#photography.active{
+  background: linear-gradient(rgba(0,0,0,0.7) ,rgba(0,0,0,0.7)),url("../img/events/photography.jpg");
+  background-size: cover;
+}
+
+#dance {
+  background-image: url("../img/events/dance.jpg");
+  background-size: cover;
+}
+
+#dance.active{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/events/dance.jpg");
+  background-size: cover;
+}
+
+#art {
+  background-image: url("../img/events/art.jpg");
+  background-size: cover;
+}
+
+#art.active{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/events/art.jpg");
+  background-size: cover;
+}
+
+#music {
+  background-image: url("../img/events/music.jpg");
+  background-size: cover;
+}
+#music.active {
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/events/music.jpg");
+  background-size: cover;
+}
+
+#gaming {
+  background-image: url("../img/events/gaming.jpg");
+  background-size: cover;
+}
+#gaming.active {
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/events/gaming.jpg");
+  background-size: cover;
+}
+
+#literature {
+  background-image: url("../img/events/literature.jpg");
+  background-size: cover;
+}
+#literature.active {
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/events/literature.jpg");
+  background-size: cover;
+}
+
+#drama {
+  background-image: url("../img/events/drama.jpg");
+  background-size: cover;
+}
+
+#drama.active{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/events/drama.jpg");
+  background-size: cover;
+}
+
+#quiz {
+  background-image: url("../img/events/quiz.jpg");
+  background-size: cover;
+}
+#quiz.active {
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/events/quiz.jpg");
+  background-size: cover;
+}
+
+#design {
+  background-image: url("../img/events/design.jpg");
+  background-size: cover;
+}
+#design.active {
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/events/design.jpg");
+  background-size: cover;
+}
+
+#pacman {
+  height: 470px;
+  width: 382px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+
+.onepage-container {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -ms-transition-property: -ms-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+
+.onepage-container .onepage-element {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#onepage {
+  background-color: #09111b;
+}
+
+.arrowdown {
+  z-index: 10;
+  bottom: 3%;
+  position: absolute;
+  display: block;
+}
+
+.arrowdown a img {
+  height: 20px;
+  width: auto;
+}
+
+.arrowup {
+  z-index: 10;
+  top: 3%;
+  position: absolute;
+  display: block;
+}
+
+.arrowup a img {
+  height: 20px;
+  width: auto;
+}
+
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+}
+
+.onepage-pagination a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+}
+
+.onepage-pagination .text-title {
+  position: absolute;
+  top: 4px;
+  right: 26px;
+  padding-right: 5px;
+  color: rgba(0, 0, 0, 0.56);
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Lucida Grande", "Helvetica Neue", sans-serif;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.onepage-pagination a:hover .text-title {
+  opacity: 1;
+}
+
+.onepage-pagination a:before {
+  display: block;
+  width: 4px;
+  height: 4px;
+  content: '';
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 1px rgba(222, 222, 222, 0.8);
+  -webkit-transition: all 100ms ease;
+  -moz-transition: all 100ms ease;
+  -ms-transition: all 100ms ease;
+  -o-transition: all 100ms ease;
+  transition: all 100ms ease;
+}
+
+
+.onepage-pagination a.active:before {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  margin-top: -4px;
+  margin-left: -4px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0
+}
+
+#onepage {
+  font: 500 16px/1.6 "Lucida Grande", "Helvetica Neue", sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#onepage a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#onepage h1 {
+  margin-top: 100px;
+}
+
+#onepage pre {
+  color: white;
+}
+
+#onepage .copyright {
+  font-size: 12px;
+  margin-bottom: 80px;
+}
+
+#onepage .github {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#onepage .github:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.heading {
+  top: 3%;
+}
+
+.heading {
+  position: absolute;
+  top: 6%;
+}
+
+h2 {
+  font-family: mynav;
+  font-size: 6em;
+}
+.li1 img{
+  position: absolute;
+  width: 17rem;
+  height: auto;
+  margin-top: -10rem;
+  margin-left: -3rem;
+}
+.li2 img{
+  position: absolute;
+  width: 17rem;
+  height: auto;
+  bottom: -17rem;
+  margin-left: -9rem;
+}
+.li3 img{
+  position: absolute;
+  width: 17rem;
+  height: auto;
+  margin-top: -10rem;
+  right: 11rem;
+
+}
+
+.dance1 {
+  height: 600px;
+}
+
+.dance1 img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 1%;
+  left: 12%;
+}
+
+
+.dance2 img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: -40%;
+  top: 19%;
+}
+.dance{
+  bottom: 20px;
+}
+
+.dance3 img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 1%;
+  left: -75%;
+}
+
+.drama1 {
+  height: 600px;
+}
+
+.m1 img {
+  width: 80%;
+  margin-left: 95px;
+  margin-top: 100px;
+
+}
+
+.drama1 img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 25%;
+}
+
+.drama2 img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 10%;
+  bottom: 2%;
+}
+
+.drama3 img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: -25%;
+  top: 25%;
+}
+
+.g1 {
+  height: 600px;
+}
+
+.g1 img {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 20%;
+  left: 40%;
+}
+
+.g2 img {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  bottom: 5%;
+  left: 15%;
+}
+
+.g3 img {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 20%;
+  left: -10%;
+}
+
+.p1 img,
+.p2 img,
+.p3 img {
+  position: absolute;
+}
+
+.a1 img,
+.a2 img,
+.a3 img {
+  position: absolute;
+}
+
+.p1 img {
+  width: 65%;
+  height: auto;
+  margin-top: -10rem;
+  margin-left: -3rem;
+}
+
+.p2 img {
+  width: 65%;
+  height: auto;
+  margin-left: -10rem;
+  /* margin-top: 10rem; */
+}
+
+.p3 img {
+  width: 65%;
+  height: auto;
+  margin-left: -16rem;
+  margin-top: -10rem;
+}
+
+.a1 img {
+  width: 55%;
+  height: auto;
+  margin-left: -1rem;
+  margin-top: -15rem;
+}
+
+.a2 img {
+  width: 55%;
+  height: auto;
+  margin-left: -7rem;
+  margin-top: -5rem;
+}
+
+.a3 img {
+  width: 55%;
+  height: auto;
+  margin-left: -12rem;
+  margin-top: -15rem;
+}
+
+.m1 img {
+  width: 80%;
+  margin-left: 95px;
+  margin-top: 100px;
+
+}
+
+.m2 img {
+  width: 85%;
+}
+
+.q1 {
+  height: 600px;
+}
+
+.q1 img {
+  width: 60%;
+  height: auto;
+  margin-top: 1rem;
+  position: absolute;
+  right: 5px;
+  top: 20%;
+}
+
+.q2 img {
+  width: 60%;
+  position: absolute;
+  bottom: 12%;
+  right: 25%;
+}
+.q3 img {
+  width: 60%;
+  position: absolute;
+  right: 55%;
+  bottom: 40%;
+}
+.q2{
+  top: 2rem;
+}
+.de2 img{
+    width: 60%;
+    height: auto;
+    margin-top: -1rem;
+    margin-right: 5rem;
+}
+.de1 img{
+  width: 60%;
+  height: auto;
+  margin-top: -7rem;
+  margin-left: 12rem;
+
+}
+#design .row{
+  top: 10rem;
+}
+.de1{
+  /* margin-top: 25rem; */
+  height: 10rem;
+}
+.de2{
+  /* margin-top: - 25rem; */
+  height: 10rem;
+}
+/* Hover up */
+
+.stream {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background: #09111B;
+  opacity: 0;
+  visibility: hidden;
+  animation: push 2s;
+}
+
+.stream1 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background-image: url("../img/Bottom-Ham.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 1;
+  visibility: hidden;
+}
+
+.stream1.active {
+  position: absolute;
+  left: 2.5%;
+  width: 95%;
+  height: 90%;
+  opacity: 1 !important;
+  visibility: visible;
+  border-radius: 30px 30px 0px 0px;
+  animation: pull 0.7s;
+}
+
+
+.hamburger-icon-bottom.active {
+  visibility: hidden;
+}
+
+.stream.active {
+  position: absolute;
+  left: 2.5%;
+  width: 95%;
+  height: 80%;
+  opacity: 1 !important;
+  /* z-index:15; */
+  visibility: visible;
+  border-radius: 30px 30px 0px 0px;
+  animation: pull 0.7s;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 15;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.overlay-content h3 {
+  font-family: mynav;
+  color: #E65C9D;
+  font-size: 4vh;
+}
+
+.overlay-content p {
+  font-family: cont;
+  color: #f38445;
+  font-size: 2.5vh;
+}
+
+.overlay-content li {
+  font-family: cont;
+  color: #f38445;
+  font-size: 2.5vh;
+}
+
+ul{
+  list-style-type: disc;
+}
+
+.nav-item.active {
+  transition-delay: .2s;
+  visibility: hidden;
+}
+
+.social-icons.active {
+  transition-delay: .2s;
+  visibility: hidden;
+}
+
+.cross i {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+}
+.material-icons {
+  visibility: hidden;
+}
+
+.material-icons.active {
+  visibility: visible;
+}
+
+@keyframes pull {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes push {
+  0% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+.register {
+  padding: 5px 5px 5px 5px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #E65C9D;
+  border-radius: 50px;
+  color: #F38445;
+  font-family: mynavnum;
+  font-size: 25px;
+}
+.register1 {
+  display:none;
+  padding-top:9px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #E65C9D;
+  border-radius: 50px;
+  color: #F38445;
+  font-family: mynavnum;
+  font-size: 25px;
+}
+.register2 {
+  display:none;
+  padding-top:9px;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #E65C9D;
+  border-radius: 50px;
+  color: #F38445;
+  font-family: mynavnum;
+  font-size: 25px;
+}
+
+.event-play {
+  font-family: mynav;
+  top: 10px;
+}
+
+.col-sm-4 img {
+  transition: transform 0.5s;
+}
+
+.col-sm-4 img:hover {
+  transform: scale(1.1);
+}
+
+.col-sm-6 img {
+  transition: transform 0.5s;
+}
+
+.col-sm-6 img:hover {
+  transform: scale(1.1);
+}
+
+i {
+  cursor: pointer;
+}
+
+.event-play {
+  margin-top: 2rem;
+}
+
+.event-play h2 {
+  font-size: 3rem;
+}
+
+.material-icons.active {
+  font-size: 48px;
+  color: white;
+}
+
+@media (max-width: 319.98px) {
+
+  #homepage,
+  #photography,
+  #dance,
+  #art,
+  #music,
+  #gaming,
+  #literature,
+  #drama,
+  #quiz,
+  #design {
+    position: absolute;
+  }
+
+  #homepage {
+    background-image: url("../img/mobile/events.png");
+    background-size: cover;
+  }
+
+  #photography {
+    background-image: url("../img/mobile/photography.png");
+    background-size: cover;
+    /* background: linear-gradient(rgba(0,0,0,0.3)); */
+  }
+  #photography.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/mobile/photography.png");
+    background-size: cover;
+  }
+
+  #dance {
+    background-image: url("../img/mobile/dance.png");
+    background-size: cover;
+  }
+
+  #dance.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/dance.png");
+    background-size: cover;
+  }
+
+  #art {
+    background-image: url("../img/mobile/art.png");
+    background-size: cover;
+  }
+
+  #art.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/art.png");
+    background-size: cover;
+  }
+
+  #music {
+    background-image: url("../img/mobile/music.png");
+    background-size: cover;
+  }
+  #music.active {
+    background :linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/music.png");
+    background-size: cover;
+  }
+
+  #gaming {
+    background-image: url("../img/mobile/gaming.png");
+    background-size: cover;
+  }
+  #gaming.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/gaming.png");
+    background-size: cover;
+  }
+
+  #literature {
+    background-image: url("../img/mobile/literature.png");
+    background-size: cover;
+  }
+  #literature.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/literature.png");
+    background-size: cover;
+  }
+
+  #drama {
+    background-image: url("../img/mobile/drama.png");
+    background-size: cover;
+  }
+
+  #drama.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/drama.png");
+    background-size: cover;
+  }
+
+  #quiz {
+    background-image: url("../img/mobile/quiz.png");
+    background-size: cover;
+  }
+  #quiz.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/quiz.png");
+    background-size: cover;
+  }
+
+  #design {
+    background-image: url("../img/mobile/dance.png");
+    background-size: cover;
+  }
+
+  #design.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))url("../img/mobile/dance.png");
+    background-size: cover;
+  }
+}
+@media (min-width: 320px) and (max-width: 767.98px){
+  #homepage {
+    background-image: url("../img/mobile/events.png");
+    background-size: cover;
+    background-position: center right;
+  }
+
+  #photography {
+    background-image: url("../img/mobile/photography.png");
+    background-position: bottom right;
+  }
+  #photography.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("../img/mobile/photography.png");
+    background-position: bottom right;
+  }
+
+  #dance {
+    background-image: url("../img/mobile/dance.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+  #dance.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url("../img/mobile/dance.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+
+  #art {
+    background-image: url("../img/mobile/art.png");
+    background-position: bottom right;
+  }
+  #art.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url("../img/mobile/art.png");
+    background-position: bottom right;
+  }
+
+  #music {
+    background-image: url("../img/mobile/music.png");
+    background-position: bottom right;
+  }
+
+  #music.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/music.png");
+    background-position: bottom right;
+  }
+
+  #gaming {
+    background-image: url("../img/mobile/gaming.png");
+    background-position: bottom right;
+  }
+
+  #gaming.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/gaming.png");
+    background-position: bottom right;
+  }
+
+  #literature {
+    background-image: url("../img/mobile/literature.png");
+    background-position: bottom right;
+  }
+  #literature.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/mobile/literature.png");
+    background-position: bottom right;
+  }
+
+  #drama {
+    background-image: url("../img/mobile/drama.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+  #drama.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/drama.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+
+  #quiz {
+    background-image: url("../img/mobile/quiz.png");
+    background-position: right;
+  }
+  #quiz.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/quiz.png");
+    background-position: right;
+  }
+
+  #design {
+    background-image: url("../img/mobile/design.png");
+    background-position: bottom right;
+  }
+  #design.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/dance.png");
+    background-position: bottom right;
+  }
+}
+@media (min-width: 320px) and (max-width: 424.98px) {
+  .instamodal{
+    position: absolute;
+    width: 7vh;
+    height: auto;
+    right: 6vw;
+    bottom: 2vh;
+  }
+
+  #homepage,
+  #photography,
+  #dance,
+  #art,
+  #music,
+  #gaming,
+  #literature,
+  #drama,
+  #quiz,
+  #design {
+    position: absolute;
+  }
+
+  #sideNav {
+    width: 0%;
+    height: 0%;
+  }
+
+
+  #eventsContent{
+    width: 85%;
+    font-size: 14px;
+    bottom: 6rem;
+  }
+  #eventsContent p{
+    font-size:15px;
+  }
+  .font {
+    margin-top: 7rem;
+    font-size: 2.5rem;
+  }
+
+  .event-play {
+    margin-top: 1rem;
+  }
+
+  .event-play h2 {
+    font-size: 1.3rem;
+  }
+
+  .material-icons.active {
+    font-size: 30px;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .register {
+    font-size: 16px;
+    top: 89%;
+    left: 33%;
+  }
+  .register1 {
+    font-size: 9px;
+    top: 89%;
+    left: 56%;
+  }
+  .register2 {
+    font-size: 9px;
+    top: 89%;
+    left: 35%;
+  }
+  .de1 img{
+    width: 10rem;
+    height: auto;
+    margin-top: 0rem;
+    margin-left: -8rem;
+  }
+  .de2 img{
+    width: 10rem;
+    height: auto;
+    margin-top: 3rem;
+    margin-right: -5rem;
+  }
+  .p1 img {
+    width: 8.5rem;
+    height: auto;
+    margin-left: -9rem;
+    margin-top: -9rem;
+  }
+
+  .p2 img {
+    width: 8.5rem;
+    height: auto;
+    margin-top: -4rem;
+    margin-left: 0;
+  }
+
+  .p3 img {
+    width: 8.5rem;
+    height: auto;
+    margin-top: 4rem;
+    margin-left: -9rem;
+  }
+
+  .q1 img {
+    width: 9rem;
+    height: auto;
+    margin-top: -2rem;
+    margin-right: 3rem;
+  }
+
+  .q2 img {
+    height: auto;
+    width: 9rem;
+    margin-bottom: 4rem;
+    margin-right: 5rem;
+  }
+
+  .q3 img {
+    width: 9rem;
+    height: auto;
+    margin-bottom: -4rem;
+    margin-right: -10.5rem;
+  }
+
+  .dance1 {
+    height: 470px;
+  }
+
+
+  .dance1 img {
+    width: 14rem;
+    bottom: 53%;
+    left: 3rem;
+    margin-top: 0px;
+  }
+
+
+  .dance2 img {
+    width: 14rem;
+    left: 3rem;
+    top: 0px;
+    margin-top: -9rem;
+  }
+
+
+  .dance3 img {
+    width: 14rem;
+    bottom: 100px;
+    left: 13%;
+    margin-bottom: 1.5rem;
+  }
+
+  .drama1 {
+    height: 600px;
+  }
+
+  .q1 {
+    height: 400px;
+  }
+
+  .drama1 img {
+    position: absolute;
+    width: 55%;
+    height: auto;
+    top: 45%;
+    left: 5rem;
+  }
+
+  .drama2 img {
+    position: absolute;
+    width: 55%;
+    height: auto;
+    left: 5.5rem;
+    bottom: 21rem;
+  }
+
+  .drama3 img {
+    position: absolute;
+    width: 55%;
+    height: auto;
+    left: 6rem;
+    top: -12.5rem;
+  }
+
+  /* .m1 img {
+    width: 95%;*/
+  .m1 {
+    height: 250px;
+  }
+
+  .m1 img {
+    width: 15rem;
+    margin-left: 9px;
+    margin-top: 63px;
+  }
+
+  .m2 img {
+    width: 15rem;
+  }
+
+  .g1 img {
+    position: absolute;
+    width: 37%;
+    height: auto;
+    top: 9rem;
+    left: 45%;
+  }
+
+  .g2 img {
+    position: absolute;
+    width: 37%;
+    height: auto;
+    top: -11rem;
+    left: 30%;
+  }
+
+  .g3 img {
+    position: absolute;
+    width: 37%;
+    height: auto;
+    top: -20rem;
+    left: 20%;
+
+  }
+
+  .a1 img {
+    width: 30%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: -10rem;
+  }
+
+  .a2 img {
+    width: 30%;
+    height: auto;
+    margin-left: -3rem;
+    margin-top: 1rem;
+  }
+
+  .a3 img {
+    width: 30%;
+    height: auto;
+    margin-left: -8rem;
+    margin-top: -10rem;
+  }
+  .li1 img{
+    width: 8.5rem;
+    height: auto;
+    margin-top: -7rem;
+    margin-left: -8rem;
+  }
+  .li2 img{
+    width: 8.5rem;
+    height: auto;
+    margin-bottom: 14.5rem;
+    margin-left: 1rem;
+  }
+  .li3 img{
+    width: 8.5rem;
+    height: auto;
+    margin-top: 3rem;
+    margin-right: -5rem;
+  }
+  .sam-logo img {
+    position: absolute;
+    width: 100px;
+    top: 5%;
+    left: 3%;
+    z-index: 900;
+    cursor: pointer;
+    border-radius: 50%;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424.98px) {
+  .q3 img {
+    margin-bottom: -6rem;
+  }
+  #eventsContent{
+    width: 79%;
+    font-size: 14px;
+    bottom: 11rem;
+    left: 2rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width:575.98px) {
+
+  .instamodal{
+    position: absolute;
+    width: 7vh;
+    height: auto;
+    right: 6vw;
+    bottom: 2vh;
+  }
+
+  #homepage,
+  #photography,
+  #dance,
+  #art,
+  #music,
+  #gaming,
+  #literature,
+  #drama,
+  #quiz,
+  #design {
+    position: absolute;
+  }
+  #eventsContent{
+    width: 85%;
+    font-size: 14px;
+    bottom: 12rem;
+  }
+  #eventsContent p{
+    font-size:15px;
+  }
+
+  .sam-logo img {
+    position: absolute;
+    width: 100px;
+    top: 5%;
+    left: 3%;
+    z-index: 900;
+    cursor: pointer;
+    border-radius: 50%;
+    visibility: visible;
+  }
+
+  .font {
+    margin-top: 3rem;
+    font-size: 4rem;
+  }
+
+  .event-play {
+    margin-top: 1rem;
+  }
+
+  .event-play h2 {
+    font-size: 2rem;
+  }
+
+  .material-icons.active {
+    font-size: 30px;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .register {
+    top: 90%;
+    left: 36.5%;
+    font-size: 17px;
+  }
+
+  /*#eventsContent{
+    margin:0 auto;
+    padding-left: 80%;
+    padding-top: 14%;
+    padding-right:80%;
+  }
+  #eventsContent p{
+    font-size:14px;
+  }*/
+
+  .dance1 {
+    height: 600px;
+  }
+
+  .dance1 img {
+    position: absolute;
+    width: 62%;
+    bottom: 54%;
+    left: 19%;
+    margin-top: 0px;
+  }
+
+
+  .dance2 img {
+    position: absolute;
+    width: 62%;
+    left: 19%;
+    top: 0px;
+    margin-top: -179px;
+  }
+
+
+  .dance3 img {
+    position: absolute;
+    width: 62%;
+    bottom: 163px;
+    left: 19%;
+    margin-top: 0px;
+  }
+
+  .drama1 {
+    height: 600px;
+  }
+
+  .drama1 img {
+    position: absolute;
+    width: 15rem;
+    margin-top: 7rem;
+    margin-left: -3rem;
+  }
+
+  .drama2 img {
+    position: absolute;
+    width: 15rem;
+    margin-bottom: 21rem;
+    margin-left: 3rem;
+  }
+
+  .drama3 img {
+    position: absolute;
+    width: 15rem;
+    margin-top: -11rem;
+    margin-left: 15rem;
+  }
+
+  .g1 {
+    height: 600px;
+  }
+
+  .g1 img {
+    position: absolute;
+    width: 33%;
+    top: vh;
+    left: 45%;
+  }
+
+  .g2 img {
+    position: absolute;
+    width: 33%;
+    bottom: -1vh;
+    left: 30%;
+  }
+
+  .g3 img {
+    position: absolute;
+    width: 33%;
+    top: -43vh;
+    left: 10%;
+  }
+
+  .p1 img,
+  .p2 img,
+  .p3 img {
+    position: absolute;
+  }
+
+
+
+  .p1 img {
+    width: 12rem;
+    height: auto;
+    margin-top: -11rem;
+    margin-left: -12rem;
+  }
+
+  .p2 img {
+    width: 12rem;
+    height: auto;
+    margin-top: -4rem;
+    margin-left: 0.5rem;
+  }
+
+  .p3 img {
+    width: 12rem;
+    height: auto;
+    margin-top: 5rem;
+    margin-left: -12rem;
+  }
+
+  .a1 img {
+    width: 26%;
+    height: auto;
+    margin-left: -21vh;
+    margin-top: -10rem;
+  }
+
+  .a2 img {
+    width: 26%;
+    height: auto;
+    margin-left: -5vh;
+    margin-top: 8vh;
+  }
+
+  .a3 img {
+    width: 26%;
+    height: auto;
+    margin-left: 9vh;
+    margin-top: -10rem;
+  }
+
+  .m1 img {
+    width: 17rem;
+    margin-left: 10px;
+    margin-top: 100px;
+
+  }
+
+  .m2 img {
+    width: 17rem;
+  }
+
+  .q1 {
+    height: 600px;
+  }
+
+  .q1 img {
+    width: 11rem;
+    position: absolute;
+    margin-right: 2rem;
+    margin-top: 1rem;
+  }
+
+  .q2 img {
+    width: 11rem;
+    position: absolute;
+    margin-bottom: 8rem;
+    margin-right: 6rem;
+
+  }
+
+  .q3 img {
+    width: 11rem;
+    position: absolute;
+    margin-right: -13rem;
+    margin-bottom: -3rem;
+  }
+
+  .li1 img {
+    width: 11rem;
+    height: auto;
+    margin-top: -8rem;
+    margin-left: -11.5rem;
+  }
+
+  .li2 img {
+    width: 11rem;
+    height: auto;
+    margin-left: 1rem;
+    margin-bottom: 13rem;
+  }
+
+  .li3 img {
+    width: 11rem;
+    height: auto;
+    margin-top: 4rem;
+    margin-right: -3rem;
+  }
+  .de1 img{
+    width: 12rem;
+    height: auto;
+    margin-top: -3rem;
+    margin-left: -10rem;
+  }
+  .de2 img{
+    height: auto;
+    width: 12rem;
+    margin-top: 5rem;
+    margin-left: 8rem;
+  }
+
+
+  #photography .font {
+    font-size: 60px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #eventsContent {
+    position: absolute;
+    font-size: 20px;
+    font-family: cont;
+    bottom: 13rem;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+
+/* For Ipad portrait */
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation:portrait) {
+
+  .instamodal{
+    position: absolute;
+    width: 7vh;
+    height: auto;
+    right: 6vw;
+    bottom: 2vh;
+  }
+  #homepage,
+  #photography,
+  #dance,
+  #art,
+  #music,
+  #gaming,
+  #literature,
+  #drama,
+  #quiz,
+  #design {
+    position: absolute;
+  }
+  #homepage {
+    background-image: url("../img/mobile/events.png");
+    background-size: cover;
+    background-position: center right;
+  }
+
+  #photography {
+    background-image: url("../img/mobile/photography.png");
+    background-position: bottom right;
+  }
+  #photography.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("../img/mobile/photography.png");
+    background-position: bottom right;
+  }
+
+  #dance {
+    background-image: url("../img/mobile/dance.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+  #dance.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url("../img/mobile/dance.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+
+  #art {
+    background-image: url("../img/mobile/art.png");
+    background-position: bottom right;
+  }
+  #art.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url("../img/mobile/art.png");
+    background-position: bottom right;
+  }
+
+  #music {
+    background-image: url("../img/mobile/music.png");
+    background-position: bottom right;
+  }
+
+  #music.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/music.png");
+    background-position: bottom right;
+  }
+
+  #gaming {
+    background-image: url("../img/mobile/gaming.png");
+    background-position: bottom right;
+  }
+
+  #gaming.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/gaming.png");
+    background-position: bottom right;
+  }
+
+  #literature {
+    background-image: url("../img/mobile/literature.png");
+    background-position: bottom right;
+  }
+  #literature.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/mobile/literature.png");
+    background-position: bottom right;
+  }
+
+  #drama {
+    background-image: url("../img/mobile/drama.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+  #drama.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/drama.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+
+  #quiz {
+    background-image: url("../img/mobile/quiz.png");
+    background-position: right;
+  }
+  #quiz.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/quiz.png");
+    background-position: right;
+  }
+
+  #design {
+    background-image: url("../img/mobile/design.png");
+    background-position: bottom right;
+  }
+  #design.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/dance.png");
+    background-position: bottom right;
+  }
+  .sam-logo img {
+    position: absolute;
+    width: 150px;
+    top: 5%;
+    left: 3%;
+    z-index: 900;
+    cursor: pointer;
+    border-radius: 50%;
+    visibility: visible;
+  }
+
+  .font {
+    margin-top: 4rem;
+    font-size: 4rem;
+  }
+
+  .event-play {
+    margin-top: 1rem;
+  }
+
+  .event-play h2 {
+    font-size: 2rem;
+  }
+
+  .material-icons.active {
+    font-size: 30px;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .register {
+    top: 90%;
+    left: 42.5%;
+  }
+
+  .dance1 img{
+    width: 22rem;
+    height: auto;
+    margin-bottom: 3rem;
+    margin-left: -1rem;
+  }
+  .dance2 img{
+    width: 23rem;
+    height: auto;
+    margin-top: -5rem;
+    left: -40%;
+  }
+  .dance3 img{
+    height: auto;
+    width: 22rem;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+  }
+  .drama1 img{
+    width: 21rem;
+    height: auto;
+    margin-top: -5rem;
+    margin-left: -6rem;
+  }
+  .drama2 img{
+    width: 21rem;
+    height: auto;
+    margin-bottom: 0rem;
+    margin-left: -4rem;
+  }
+  .drama3 img{
+    width: 21rem;
+    height: auto;
+    margin-top: -5rem;
+    margin-left: -2rem;
+  }
+  .li1 img{
+    width: 16rem;
+    height: auto;
+    margin-top: -16.5rem;
+    margin-left: -3rem;
+  }
+  .li2 img{
+    width: 16rem;
+    height: auto;
+    margin-left: 2rem;
+    margin-bottom: 13rem;
+  }
+  .li3 img{
+    width: 16rem;
+    height: auto;
+    margin-right: 4rem;
+    margin-top: 6rem;
+  }
+  .p1 img {
+    width: 17rem;
+    height: auto;
+    margin-top: -16em;
+    margin-left: -4rem;
+  }
+
+  .p2 img {
+    width: 17rem;
+    height: auto;
+    margin-top: 5rem;
+    margin-left: -14rem;
+  }
+
+  .p3 img {
+    width: 17rem;
+    height: auto;
+    margin-top: -15rem;
+    margin-left: -12rem;
+  }
+
+  .q1 img {
+    width: 17rem;
+    height: auto;
+    margin-top: -6rem;
+    margin-right: -15rem;
+  }
+
+  .q2 img {
+    width: 17rem;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-right: 8rem;
+  }
+
+  .q3 img {
+    width: 17rem;
+    height: auto;
+    margin-bottom: -27rem;
+    margin-right: 2rem;
+  }
+
+  .a1 img {
+    width: 80%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: -17rem;
+  }
+
+  .a2 img {
+    width: 80%;
+    height: auto;
+    margin-left: -6rem;
+    margin-top: 3rem;
+  }
+
+  .a3 img {
+    width: 80%;
+    height: auto;
+    margin-left: -11rem;
+    margin-top: -17rem;
+  }
+
+  .g1 img {
+    position: absolute;
+    width: 120%;
+    top: 10vh;
+    left: 30%;
+  }
+
+  .g2 img {
+    position: absolute;
+    width: 120%;
+    bottom: -4vh;
+    left: 0%;
+  }
+
+  .g3 img {
+    position: absolute;
+    width: 120%;
+    top: 10vh;
+    left: -25%;
+  }
+  .de1 img{
+    width: 20rem;
+    height: auto;
+    margin-top: -14rem;
+    margin-left: 2rem;
+  }
+  .de2 img{
+    width: 20rem;
+    height: auto;
+    margin-top: 9rem;
+    margin-right: 5rem;
+
+  }
+}
+
+/* Ipad Pro */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .instamodal{
+    position: absolute;
+    width: 7vh;
+    height: auto;
+    right: 6vw;
+    bottom: 2vh;
+  }
+
+  #homepage,
+  #photography,
+  #dance,
+  #art,
+  #music,
+  #gaming,
+  #literature,
+  #drama,
+  #quiz,
+  #design {
+    position: absolute;
+  }
+
+  .font {
+    margin-top: 3.5rem;
+    font-size: 5rem;
+  }
+
+  .event-play {
+    margin-top: 1rem;
+  }
+
+  .event-play h2 {
+    font-size: 4rem;
+  }
+
+  .material-icons.active {
+    right:5%;
+    font-size: 60px;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .register {
+    top: 90%;
+    left: 40%;
+    font-size: 2rem;
+  }
+
+ #homepage {
+    background-image: url("../img/mobile/events.png");
+    background-size: cover;
+    background-position: center right;
+  }
+
+  #photography {
+    background-image: url("../img/mobile/photography.png");
+    background-position: bottom right;
+  }
+  #photography.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("../img/mobile/photography.png");
+    background-position: bottom right;
+  }
+
+  #dance {
+    background-image: url("../img/mobile/dance.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+  #dance.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url("../img/mobile/dance.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+
+  #art {
+    background-image: url("../img/mobile/art.png");
+    background-position: bottom right;
+  }
+  #art.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url("../img/mobile/art.png");
+    background-position: bottom right;
+  }
+
+  #music {
+    background-image: url("../img/mobile/music.png");
+    background-position: bottom right;
+  }
+
+  #music.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/music.png");
+    background-position: bottom right;
+  }
+
+  #gaming {
+    background-image: url("../img/mobile/gaming.png");
+    background-position: bottom right;
+  }
+
+  #gaming.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/gaming.png");
+    background-position: bottom right;
+  }
+
+  #literature {
+    background-image: url("../img/mobile/literature.png");
+    background-position: bottom right;
+  }
+  #literature.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/mobile/literature.png");
+    background-position: bottom right;
+  }
+
+  #drama {
+    background-image: url("../img/mobile/drama.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+  #drama.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/drama.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+
+  #quiz {
+    background-image: url("../img/mobile/quiz.png");
+    background-position: right;
+  }
+  #quiz.active {
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/quiz.png");
+    background-position: right;
+  }
+
+  #design {
+    background-image: url("../img/mobile/design.png");
+    background-position: bottom right;
+  }
+  #design.active{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/mobile/dance.png");
+    background-position: bottom right;
+  }
+  .dance1 img{
+    width: 28rem;
+    height: auto;
+    margin-bottom: -14rem;
+    margin-left: 7rem;
+  }
+  .dance2 img{
+    width: 28rem;
+    height: auto;
+    margin-top: -10rem;
+    left: -40%;
+  }
+  .dance3 img{
+    height: auto;
+    width: 28rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+  }
+  .drama1 img{
+    width: 24rem;
+    height: auto;
+    margin-top: -3rem;
+  }
+  .drama2 img{
+    width: 24rem;
+    height: auto;
+    margin-bottom: -2rem;
+  }
+  .drama3 img{
+    width: 24rem;
+    height: auto;
+    margin-top: -4rem;
+    margin-left: 1rem;
+  }
+  .li1 img{
+    width: 18rem;
+    height: auto;
+    margin-top: -20rem;
+    margin-left: 2rem;
+  }
+  .li2 img{
+    width: 18rem;
+    height: auto;
+    margin-bottom: 14rem;
+    margin-left: 4rem;
+  }
+  .li3 img{
+    width: 18rem;
+    height: auto;
+    margin-top: 7rem;
+    margin-right: 9rem;
+  }
+  .p1 img {
+    width: 20rem;
+    height: auto;
+    margin-top: -24rem;
+    margin-left: 2rem;
+  }
+
+  .p2 img {
+    width: 20rem;
+    height: auto;
+    margin-top: 7rem;
+    margin-left: -17rem;
+
+  }
+
+  .p3 img {
+    width: 20rem;
+    height: auto;
+    margin-top: -14rem;
+    margin-left: -16rem;
+  }
+
+  .q1 img {
+    width: 20rem;
+    height: auto;
+    margin-top: -13rem;
+    margin-right: -30rem;
+  }
+
+  .q2 img {
+    width: 20rem;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+
+  }
+
+  .q3 img {
+    width: 20rem;
+    height: auto;
+    margin-bottom: -37rem;
+    margin-right: 3rem;
+
+  }
+
+  .a1 img {
+    width: 80%;
+    height: auto;
+    margin-left: 9%;
+    margin-top: -23rem;
+  }
+
+  .a2 img {
+    width: 80%;
+    height: auto;
+    margin-left: -6rem;
+    margin-top: 3rem;
+  }
+
+  .a3 img {
+    width: 80%;
+    height: auto;
+    margin-left: -11rem;
+    margin-top: -23rem;
+  }
+
+  .g1 img {
+    position: absolute;
+    width: 100%;
+    top: 2vh;
+    left: 60%;
+  }
+
+  .g2 img {
+    position: absolute;
+    width: 100%;
+    bottom: -6vh;
+  }
+
+  .g3 img {
+    position: absolute;
+    width: 100%;
+    top: 2vh;
+    left: -25%;
+  }
+}
+/* Events homepage content Aligning for Desktop */
+
+@media (min-width:1200px){
+  #eventsContent{
+    position: absolute;
+    font-size: 20px;
+    font-family: cont;
+    bottom: 5rem;
+    width: 30%;
+  }
+}
+@media (min-width:1400px){
+  #eventsContent{
+    position: absolute;
+    font-size: 20px;
+    font-family: cont;
+    bottom:10rem;
+  }
+
+  .de1 img{
+    width: 18rem;
+    height: auto;
+    margin-top: -6rem;
+    margin-left: 12rem;
+  }
+  .de2 img{
+    width: 18rem;
+    height: auto;
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+}

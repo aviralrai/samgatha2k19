@@ -1,0 +1,58 @@
+@font-face {
+    font-family: mynav;
+    src: url(../fonts/nav.ttf);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+body {
+    background-image: url(../img/sponsors/Sponors.jpg);
+}
+
+.sponsor {
+    margin-top: 15vh;
+    text-align: center;
+    background-color: transparent;
+}
+.top1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7rem;
+    z-index: 10;
+    background-color: #09111b;
+}
+h1 {
+    font-family: mynav;
+    color: #f38445;
+    font-size: 10vh;
+    text-align: center;
+}
+
+.sponsor h2 {
+    color: white;
+    font-family: mynav;
+}
+
+.sponsor img{
+    margin-top: 2vh;
+}
+.sam-logo img {
+    position: absolute;
+    width: 20vh;
+    top: 5%;
+    left: 3%;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 0%;
+  }
+

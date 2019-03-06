@@ -1,0 +1,286 @@
+@font-face {
+    font-family: comedy;
+    src: url(../fonts/Gotham-UltraItalic.otf);
+}
+
+@font-face {
+    font-family: edm;
+    src: url(../fonts/nsteel.ttf);
+}
+
+@font-face {
+    font-family: rock;
+    src: url(../fonts/Toe\ the\ Lineless.ttf);
+}
+
+@font-face {
+    font-family: mynav;
+    src: url(../fonts/nav.ttf);
+}
+
+.heading {
+    position: absolute;
+}
+
+#workshops .heading {
+    position: absolute;
+    top:0;
+}
+
+#workshops .heading .font{
+    font-family:mynav;
+    font-size: 15vw;
+}
+
+#workshops{
+    background-image:url('../img/workshops/bg\ workshops.png');
+    background-size: 100% 100%;
+}
+
+#comedy h2 {
+    font-family: comedy;
+    font-size: 8vw;
+    color: #1F1F20;
+}
+
+#comedy .heading {
+    top: 0;
+}
+
+#edm h2 {
+    font-family: edm;
+    font-size: 8vw;
+}
+
+#edm .heading {
+    top: 7vh;
+}
+
+#rock h2 {
+    font-family: rock;
+    font-size: 8vw;
+}
+
+#rock .heading {
+    top: 7vh;
+}
+
+.c1 img {
+    height: 45%;
+    bottom: 2%;
+    left: 20%;
+    position: absolute;
+}
+
+.c2 img {
+    height: 72%;
+    left: -8%;
+    position: inherit;
+    top: 19%;
+}
+
+.c3 img {
+    height: 47%;
+    bottom: 2%;
+    left: 29%;
+    position: absolute;
+}
+
+.e1 img {
+    height: 32vw;
+    position: absolute;
+    left: 41%;
+    top: 4.5vw;
+}
+
+.e2 img {
+    height: 80%;
+    position: inherit;
+    left: 16%;
+    top: 26%;
+}
+
+.r1 img {
+    height: 35vw;
+    position: inherit;
+    top: 25%;
+    left: 8vw;
+}
+
+.r2 img {
+    position: inherit;
+    height: 20vw;
+    top: 45%;
+    left: 20%;
+}
+
+/* Use minimum height as 560 */
+@media (min-width: 320px) and (max-width: 424.98px) {
+    .c1 img {
+    height: 120px;
+    left: 15%;
+    margin-bottom: -90%;
+    }
+
+    .c2 img {
+    height: 160px;
+    top: 12%;
+    left: 1%;
+    }
+
+    .c3 img {
+      height: 130px;
+    margin-bottom: -20%;
+    left: 55%;
+    }
+
+    .e1 img {}
+
+    .e2 img {}
+
+    .r1 img {
+        position: absolute;
+        width: 75vw;
+        height: auto;
+        top: -47vw;
+        left: 2rem;
+    
+    }
+
+    .r2 img {
+        position: absolute;
+        width: 75vw;
+        height: auto;
+        top: 25vw;
+        left: 1rem;
+    }
+}
+
+/* Use minimum height as 730 */
+@media (min-width: 425px) and (max-width:575.98px) {
+    .r1 img {
+        position: absolute;
+        width: 75vw;
+        height: auto;
+        top: -47vw;
+        left: 2rem;
+    
+    }
+
+    .r2 img {
+        position: absolute;
+        width: 75vw;
+        height: auto;
+        top: 25vw;
+        left: 1rem;
+    }
+    
+    .c1 img {
+    height: 160px;
+    left: 10%;
+    margin-bottom: -100%;
+    }
+    
+    .c2 img {
+    height: 230px;
+    top: -30%;
+    left: -20%;
+    }
+    
+    .c3 img {
+    height: 160px;
+    margin-bottom: -20%;
+    left: 55%;
+    }
+}
+
+/* Ipad */
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation:portrait) {
+    .r1 img {
+        position: absolute;
+        width: 67vw;
+        height: auto;
+        top: -39vw;
+        left: 0rem;
+    
+    }
+
+    .r2 img {
+        position: absolute;
+        width: 62vw;
+        height: auto;
+        top: 18vw;
+        left: -6rem;;
+    }
+    
+    .c1 img {
+    height: 250px;
+    left: 25%;
+    margin-bottom: -110%;
+    }
+    
+    .c2 img {
+    height: 380px;
+    top: -30%;
+    left: -110%;
+    }
+    
+    .c3 img {
+    height: 270px;
+    margin-bottom: -20%;
+    left: -15%;
+    }
+}
+
+/* Ipad pro */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .r1 img {
+        position: absolute;
+        width: 60vw;
+        height: auto;
+        top: -39vw;
+        left: 9rem;
+    
+    }
+
+    .r2 img {
+        position: absolute;
+        width: 55vw;
+        height: auto;
+        top: 21vw;
+        left: -6rem;
+    }
+    
+    .c1 img {
+    height: 330px;
+    left: 45%;
+    margin-bottom: -80%;
+    }
+    
+    .c2 img {
+    height: 660px;
+    top: -10%;
+    left: -40%;
+    }
+    
+    .c3 img {
+    height: 330px;
+    margin-bottom: -80%;
+    left: -15%;
+    }
+}
+@media (min-width: 1440px){
+    .r1 img {
+        height: 66%;
+        position: inherit;
+        top: 29%;
+        left: 10%;
+    }
+    
+    .r2 img {
+        position: inherit;
+        height: 37%;
+        top: 45%;
+        left: 20%;
+    }
+}

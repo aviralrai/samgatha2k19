@@ -1,0 +1,44 @@
+{
+  "name": "samgatha2019",
+  "version": "1.0.0",
+  "description": "The core repo of Samgatha 2019 website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-dev": "webpack --mode development",
+    "webpack-start": "webpack --mode development --watch",
+    "webpack-build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nipunbharti/samgatha2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nipunbharti/samgatha2019/issues"
+  },
+  "homepage": "https://github.com/nipunbharti/samgatha2019#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.1",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "path": "^0.12.7",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "semantic-ui-react": "^0.85.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3"
+  }
+}

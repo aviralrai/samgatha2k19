@@ -1,0 +1,587 @@
+@font-face {
+    font-family: mynavmenu;
+    src: url(../fonts/register.ttf);
+  }
+  
+  @font-face {
+    font-family: mynavnum;
+    src: url(../fonts/Vintage\ Warehouse.ttf);
+  }
+
+.hamburger-icon {
+  position: fixed;
+  height: 6vh;
+  width: auto;
+  top: 5%;
+  right: 0;
+  z-index: 1050;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  /* background: rgba(255,255,255,0.2); */
+}
+.hamburger-icon img{
+  height: 6vh;
+  width: auto;
+}
+#icon.ham{
+  background-image: url("../img/rightham.png");
+}
+.clear {
+  clear: both;
+}
+
+/* @keyframes slideIn {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  100% {
+    width: 50%;
+    opacity: 1;
+  }
+} */
+
+#nav {
+  background-image: url("../img/Background Ham.png");
+  background-repeat: no-repeat;
+  /* background-size: 50rem 500rem; */
+  position: absolute;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  height: 500rem;
+  width: 0%;
+  z-index: 1001;
+  opacity: 0;
+  transition:0.5s;  
+  /* transition: all 600ms cubic-bezier(.62,.04,.3,1.56); */
+  /* animation: slideIn; */
+  /* transition-delay: 100ms; */
+}
+
+#nav.show {
+    width: 50%;
+    right: -22vw;
+    top: -6%;
+    opacity: 1;
+    position: fixed;
+    z-index: 1040;
+    background-size: 100% 42rem;
+ }
+.ham-social-media{
+  position: relative;
+  top: 15%;
+  left: 2%;
+  display: none;
+}
+
+.ham-div{
+  position: relative;
+  margin-top: 15%;
+  /* margin-left: 8%; */
+  width: 45%;
+  height: 60%;
+  display: block;
+  /* border: 3px solid #B35225; */
+  /* border-radius: 15%; */
+}
+.ham-side{
+  font-family:mynavnum;
+  color: #B35225;
+  font-size: 14px;
+  margin-left: 4px;
+  /* text-align: left; */
+  /* vertical-align: 50%; */
+}
+.ham-num{
+  font-family:mynavnum;
+  color: #B35225;
+  font-size: 23px;
+  margin-top: 20%;
+  /* vertical-align: middle; */
+  /* vertical-align: 100%; */
+  /* margin-left:25%; */
+}
+a.ham-menu{
+  /* padding-left: 10%; */
+  font-size: 25px;
+  font-family: mynavnum;
+  color: #020202 !important; 
+  text-transform: uppercase;
+}
+.offset-2.col-2{
+  margin-top: 0.2vw;
+}
+a.reg{
+  color:#B35225 !important;
+}
+a.ham-menu:hover{
+  color: #F16E32 !important;
+}
+
+  ul.ham-nav {
+    margin: 0;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 7%;
+  }
+    .ham-nav li {
+      list-style: none;
+      font-size: 50px;
+      font-family: mynav;
+      color: #020202;
+      line-height: 0.9;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+      
+      
+    }
+    .ham-nav li:hover{
+        color: #F16E32;
+    } 
+
+
+
+@keyframes shotup {
+  0% {
+    transform: translateY(300%) ;
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0%) ;
+    opacity: 1;
+  }
+}
+@media screen and (min-width:1440px)
+{
+  a.ham-menu{
+    font-size: 30px;
+  }
+  span.ham-num{
+    font-size: 30px !important;
+  }
+  span.ham-side{
+    font-size: 16px !important;
+  }
+  .ham-div{
+    width: 45%;
+    margin-top: 20%;
+    margin-left: 4%;
+    height: 60%;
+    /* padding: 10px 0px 0px 15px; */
+  }
+  #nav{
+    /* background-size: 55% !important; */
+  }
+  .col-2{
+    vertical-align: middle !important;
+  }
+}
+
+
+@media screen and (max-width:1024px)
+{
+  .ham-div{
+    width: 60%;
+    margin-top: 25%;
+    /* margin-left: 10%; */
+    padding: 20px 5px 0px 5px;
+  }
+  #nav{
+    background-size: 70%;
+  }
+  .col-2{
+    padding-top: 7px !important;
+  }
+
+}
+
+@media screen and (max-width:1023.9px) and (min-width:768.1px){
+  #nav.show{
+    width:70%;
+  }
+}
+
+@media screen and (max-width:1300.9px) and (min-width:1024.1px){
+  #nav.show{
+    width:55%;
+  }
+  #nav{
+    background-size: 70%;
+  }
+}
+
+@media screen and (max-width:767.9px) and (min-width:425px)
+{
+  #nav.show{
+    width:98%;
+  }
+}
+
+@media screen and (max-width:768px) and (min-width:425px)
+{
+  a.ham-menu{
+    font-size: 25px;
+  }
+  span.ham-num{
+    font-size: 18px !important;
+  }
+  span.ham-side{
+    font-size: 8px !important;
+  }
+  .ham-div{
+    height: 55%;
+  }
+  #nav{
+    background-size: 80%;
+  }
+  .col-2{
+    padding-top: 2px !important;
+  }
+}
+
+@media screen and (max-width:425px)
+{
+  a.ham-menu{
+    font-size: 27px;
+  }
+  span.ham-num{
+    font-size: 15px !important;
+  }
+  span.ham-side{
+    font-size: 8px !important;
+  }
+  .ham-div{
+    width: 70%;
+    margin-top: 25%;
+    margin-left: 10%;
+    height: 50%;
+    padding: 10px 0px 0px 15px;
+  }
+  #nav.show{
+    width:80%;
+  }
+  #nav{
+    background-size: 90%;
+  }
+  .col-2{
+    padding-top: 5.5px !important;
+  }
+}
+  @media screen and (max-width:575.98px){
+  .hamburger-icon-bottom {
+    position: absolute;
+    background-image: url("../img/mobile/hamburger.png");
+    background-size:70px 50px;
+    height: 50px;
+    width: 70px;
+    bottom: 2%;
+    left: 0%;
+    z-index: 1001;
+    cursor: pointer;
+    /* border-radius: 50%;   */
+  }
+  .nav-link {
+    color: black;
+    font-family: mynavnum;
+    font-size: 1.1rem;
+  }
+  .cross1 {
+    color: #F38445;
+    position: absolute;
+    top: 55px;
+    left: 25px;
+  }
+  .col-2{
+    padding-top: 5.5px !important;
+  }
+  .ham-social-media{
+    display: block;
+  }
+}
+
+@media screen and (max-width:417px)
+{
+  #nav.show{
+    width: 90%;
+    right: -5%;
+  }
+}
+
+
+/* Down Hamburger for Ipad */
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation:portrait){
+  .hamburger-icon-bottom {
+    position: absolute;
+    background-image: url("../img/mobile/hamburger.png");
+    background-size:100px 80px;
+    height: 80px;
+    width: 100px;
+    bottom: 2%;
+    left: 0%;
+    z-index: 1001;
+    cursor: pointer;
+    /* border-radius: 50%;   */
+  }
+  .nav-link{
+    color: black;
+    font-family: mynavnum;
+    font-size: 2rem;
+  }
+  .cross1 {
+    color: #F38445;
+    position: absolute;
+    top: 141px;
+    left: 196px;
+    display: inline-block;
+  }
+  .still{
+    text-align: center;
+  }
+}
+@media only screen and (orientation:landscape) and (max-width:600px) and (max-height:430px)
+{
+  a.ham-menu{
+    font-size: 22px;
+  }
+  span.ham-num{
+    font-size: 15px !important;
+  }
+  span.ham-side{
+    font-size: 10px !important;
+  }
+  .ham-div{
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 15%;
+    height: 100%;
+    padding: 2px 0px 0px 80px;
+  }
+  #nav{
+    background-size: 90%;
+  }
+  #nav.show{
+    width: 100%;
+    right: -5%;
+  }
+}
+
+@media screen and (max-width:375px)
+{
+  a.ham-menu{
+    font-size: 30px;
+  }
+  span.ham-num{
+    font-size: 20px !important;
+  }
+  span.ham-side{
+    font-size: 10px !important;
+  }
+  .ham-div{
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 10%;
+    height: 70%;
+    padding: 15px 0px 15px 15px;
+  }
+  #nav{
+    background-size: 90%;
+  }
+  #nav.show{
+    width: 100%;
+    right: -5%;
+  }
+  .ham-social-media{
+    top: 5%;
+  }
+}
+
+@media screen and (max-width:320px)
+{
+  a.ham-menu{
+    font-size: 25px;
+  }
+  span.ham-num{
+    font-size: 15px !important;
+  }
+  span.ham-side{
+    font-size: 9px !important;
+  }
+  .ham-div{
+    width: 79%;
+    margin-top: 20%;
+    margin-left: 10%;
+    height: 50%;
+    padding: 10px 0px 0px 20px;
+  }
+  #nav.show{
+    width: 100%;
+    right: -5%;
+  }
+  #nav{
+    background-size: 90%;
+  }
+  .ham-social-media{
+    top: 10%;
+
+  }
+}
+
+.row.display-flex{
+  margin-top: 0.6rem;
+}
+
+
+/* New changes */
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .ham-div{
+    width: 79%;
+    margin-top: 20%;
+    margin-left: 8%;
+  }
+  #nav.show{
+    width: 100%;
+    right: 0;
+    background-size: 100% 75rem;
+  }
+  .ham-social-media{
+    top: -49%;
+    left: 3%;
+  }
+  a.ham-menu{
+    font-size: 65px;
+    font-family: mynavnum;
+    margin-top: 2rem;
+  }
+  span.ham-num{
+    font-size: 50px !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+  .ham-div{
+    width: 79%;
+    margin-top: 20%;
+    margin-left: 11%;
+  }
+  #nav.show{
+    width: 100%;
+    right: 0;
+    background-size: 100% 55rem;
+  }
+  .ham-social-media{
+    top: -50%;
+    left: 15%;
+    display: block;
+  }
+  a.ham-menu{
+    font-size: 35px;
+    font-family: mynavnum;
+    margin-top: 2rem;
+  }
+  span.ham-num{
+    font-size: 31px !important;
+}
+}
+
+@media screen and (max-width:470px){
+  .ham-div{
+    width: 79%;
+    margin-top: 20%;
+    margin-left: 4%;
+  }
+  #nav.show{
+    width: 100%;
+    right: 0;
+  }
+  .ham-social-media{
+    top: -49%;
+    left: 3%;
+  }
+  a.ham-menu{
+    font-size: 35px;
+    font-family: mynavnum;
+    margin-top: 2rem;
+  }
+  span.ham-num{
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width:425px){
+  .ham-div{
+    width: 79%;
+    margin-top: 23%;
+    margin-left: 11%;
+  }
+  #nav.show{
+    width: 100%;
+    right: 0%;
+  }
+  .ham-social-media{
+    top: -44.3%;
+    left: 6%;
+  }
+  a.ham-menu{
+    font-size: 26px;
+    font-family: mynavnum;
+
+  }
+  span.ham-num{
+    font-size: 20px !important;
+  }
+
+}
+@media screen and (max-width:375px){
+  .ham-div{
+    width: 79%;
+    margin-top: 43%;
+    margin-left: 10%;
+  }
+  #nav.show{
+    width: 100%;
+    right: 0;
+    top: -22%;  
+  }
+  .ham-social-media{
+    top: -65%;
+    left: 6%;
+  }
+  a.ham-menu{
+    font-size: 26px;
+    font-family: mynavnum;
+
+  }
+  span.ham-num{
+    font-size: 20px !important;
+  }
+
+}
+@media screen and (max-width:320px){
+  .ham-div{
+    width: 79%;
+    margin-top: 46%;
+    margin-left: 5%;
+  }
+  #nav.show{
+    width: 125%;
+    right: -20%;
+  }
+  .ham-social-media{
+    top: -45%;
+    left: 6%;
+  }
+  a.ham-menu{
+    font-size: 24px;
+    font-family: mynavnum;
+
+  }
+  span.ham-num{
+    font-size: 20px !important;
+  }
+
+}
+

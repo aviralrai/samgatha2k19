@@ -1,0 +1,152 @@
+#preloader{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:url('../img/samgathaloading.png');
+    background-size: 30rem 20rem;
+    background-color:#09111b;
+    background-position: center;
+    background-repeat:no-repeat;
+    z-index:999999;
+}
+
+#preloader img{
+    width:9%;
+    height:auto;
+    position:absolute;
+    left:46%;
+    right:50%;
+    bottom:5%;
+}
+
+.tv{
+    position:absolute;
+    top:20%;
+    left:17rem;
+    width:50rem;
+  }
+  
+  .y-link{
+    left:21rem;
+    position:absolute;
+    top:13rem;
+    width:35rem;
+    height:25rem;
+  }
+  
+
+@media only screen and (orientation:landscape) and (max-width:600px)
+{
+  .logo img{
+    top: -40px;
+    width: 24rem;
+    height: 16rem;
+  }
+
+}
+
+@media only screen and (min-width:1439px){
+    #preloader{
+        position: relative;
+        background-size:30rem auto;
+        background-position-y: 17.8em;
+        /* width: 30rem;
+        height: auto;
+        top: 2em; */
+    }
+    #preloader img{
+        left:42rem;
+        width:9%;
+        height:auto;
+        bottom:3%;
+    }
+    .tv{
+        top:20%;
+        left:22rem;
+        width:50rem;
+      }
+      
+    .y-link{
+    left:26rem;
+    top:13rem;
+    width:35rem;
+    height:25rem;
+    }
+}
+
+@media only screen and (max-width:1024px)
+{
+    #preloader{
+        background-size:30rem 20rem;
+        background-position-y: 13.7rem;
+    }
+    #preloader img{
+        left:15rem;
+        width:20%;
+        height:auto;    
+        bottom:5%;
+    }
+    .tv{
+    left:2rem;
+    width:35rem;
+    height:25rem;
+    }
+    .y-link{
+        left:6rem;
+        width:24rem;
+        height:18rem;
+    }
+}
+
+@media screen and (max-width:425px)
+{
+    #preloader{
+        background-size:23rem 14rem;
+        background-position-y: 17rem;
+    }
+    #preloader img{
+        left:8rem;
+        width:40%;
+        height:auto;    
+        bottom:5%;
+    }
+    .tv{
+        top:18rem;
+        left:-1rem;
+        width:28rem;
+        height:20rem;
+    }
+    .y-link{
+        top:19rem;
+        left:1rem;
+        width:20rem;
+        height:16rem;
+    }
+}
+@media screen and (max-width:375px)
+{
+    #preloader{
+        background-size:18rem 11rem;
+        background-position-y: 18.5rem;
+    }
+    #preloader img{
+        left:5.75rem;
+        width:50%;
+        height:auto;    
+        bottom:5%;
+    }
+    .tv{
+        top:18rem;
+        left:-1rem;
+        width:28rem;
+        height:20rem;
+    }
+    .y-link{
+        top:19rem;
+        left:1rem;
+        width:20rem;
+        height:16rem;
+    }
+}

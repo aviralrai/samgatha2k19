@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/Favicon Square.ico" type="image/x-icon" sizes="16x16">
+    <link rel="shortcut icon" href="img/Favicon Square.ico" type="image/x-icon" sizes="16x16">
+    <link rel="apple-touch-icon" href="img/Favicon Square.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Samgatha'19</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ribbon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="device-notification">
+        <img style="width: 150px;" src="img/samlogo.png" />
+        <p class="device-notification--message">Samgatha has so much to offer that we must request you orient your
+            device to
+            portrait or find a larger screen. You won't be disappointed.</p>
+    </div>
+
+    <div id="preloader">
+        <img class="loading-gif" src="img/Loading.gif"/>
+    </div>
+    <script>
+        //preloader
+        $(document).ready(function(){
+            $(window).on("load",function(){
+                preloaderFadeOutTime = 2000;
+                function hidePreloader() {
+                    var preloadertag = $('#preloader');
+                    preloadertag.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+            });
+        });
+        //$("#preloader").css("background-size",String(x)+"% "+String(y)+"%");
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item ml-5 ">
+                    <a class="nav-link js-scroll-trigger " id="homepage1" href="#homepage">HOME</a>
+                </li>
+                <li class="nav-item ml-5">
+                    <a class="nav-link js-scroll-trigger " id="about1" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="theme1" href="#theme">THEME</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="sponsors1" href="#sponsors">TEASER</a>
+                </li>
+                <li class="nav-item  ml-5">
+                    <a class="nav-link js-scroll-trigger" id="team1" href="#team">CONTACT US</a>
+                </li>
+                <li class="ml-4" style="position:absolute;display:block;bottom:1%;">
+                    <span><a href="https://www.instagram.com/samgatha/?hl=en" target="_blank"><img style="width:51x;height:49px;margin-right: 5vw;"
+                                class="insta" src="./img/insta.png"></a> </span>
+                    <a href="https://www.facebook.com/samgathaatiiitdm/" target="_blank"><img style="width:30px;height:49px;margin-left:-4vw;"
+                            class="fb" src="./img/fb.png"></a>
+                    <!-- <a href="#" target="_blank"><img style="width:60px;height:49px;padding:5px;" class="twit" src="./img/Twitter.png"></a> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hamburger-icon">
+        <img id="icon" src="img/rightham.png" onclick="changeColor()"/>
+    </div>
+    <nav id="nav">
+        <div class="ham-div">
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">1</span></div>
+                <div class="col-6"><a class="ham-menu" href="#" style="text-decoration:none">HOME</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">2</span></div>
+                <div class="col-6"><a class="ham-menu" href="events.html" style="text-decoration:none">EVENTS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">3</span></div>
+                <div class="col-6"><a  href="proshows2.html" class="ham-menu" style="text-decoration:none">PROSHOWS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">4</span></div>
+                <div class="col-6"><a href="team.html" class="ham-menu" style="text-decoration:none">TEAMS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">5</span></div>
+                <div class="col-6"><a href='https://drive.google.com/file/d/1SBsV7xj176LTbFT5TJu2-sgQxW9F11ea/view?usp=sharing' class="ham-menu" style="text-decoration:none">SCHEDULE</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">6</span></div>
+                <div class="col-6"><a class="ham-menu" href="sponsors.html" style="text-decoration:none">SPONSORS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">7</span></div>
+                <div class="col-6"><a class="ham-menu" href="workshops.html" style="text-decoration:none">WORKSHOPS</a></div>
+            </div>
+            <div class="row display-flex">
+                <div class="offset-2 col-2" style="vertical-align: bottom;"><span class="ham-num">8</span></div>
+                <div class="col-6"><a class="ham-menu reg" href="registration.html" style="text-decoration:none">REGISTER</a></div>
+            </div>
+        </div>
+        <div class="ham-social-media">
+            <span><a href="https://www.instagram.com/samgatha/?hl=en" target="_blank"><img style="width: 12vw;height: auto;margin-left: 5vw;"
+                         class="insta" src="./img/insta.png"></a> </span>
+            <a href="https://www.facebook.com/samgathaatiiitdm/" target="_blank"><img style="width:7vw;height:auto; margin-left: 2vw;"
+                    class="fb" src="./img/fb.png"></a>
+            <!-- <a href="#" target="_blank"><img style="width:60px;height:49px;padding:5px;" class="twit" src="./img/Twitter.png"></a> -->
+        </div>
+    </nav>
+
+    <div class="rulebook" style="position:fixed;">
+        <a href="https://drive.google.com/open?id=1SBsV7xj176LTbFT5TJu2-sgQxW9F11ea" target="_blank"><img src="img/Schedule.png" height="auto" width="60px"/></a>
+    </div>
+
+    <div id="onepage">
+        <div id="homepage">
+            <!-- <div class="circle-ripple"></div> -->
+            <div class="logo"><img src="img/samlogo.png"></div>
+            <div class="ribbon-container">
+                <div class="ribbon">
+                    <a href="registration.html" style="text-decoration:none"><div class="register" style="text-decoration:none">Register</div></a>
+                    <i></i>
+                    <i></i>
+                    <i><span class="gradient-left"></span></i>
+                    <i><span class="gradient-right"></span></i>
+                </div>
+            </div>
+            <div class="arrowdown" id="d1">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+            <div class="needle">
+                <img src="img/Needlemask.png" />
+            </div>
+        </div>
+
+        <div id="about">
+            <!-- <div class="top-vinyl">
+                <img src="img/Viny-bg-about-us.png" width="100%" height="auto" />
+            </div> -->
+            <div class="needle2">
+                <img src="img/needle_au.png" />
+            </div>
+            <div class="arrowup" id="u1">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+                <p class="themehead">ABOUT US</p>
+                <p class="themepara">Over the last decade, Samgatha has become a cultural extravaganza,<br> that has hosted some epic wins and unforgettable moments, with the likes of<br>King Siddharth, Poly Varghese, Drums Murali and Matt Bacon adding grandeur to the celebrations.
+                    <br>Come step into a whole new world of spectacles.<br>A place where new friendships are forged and memories are forever etched into your hearts.<br>Experience Samgatha in all it’s glory and watch your dreams unfold and turn into reality.</p>
+            <div class="arrowdown" id="d2">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+        <div id="theme">
+            <div class="arrowup" id="u2">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <p class="themepara">Embark on a remarkable and nostalgic journey through<br>time. Travel across
+                the ages and take a sneak peek at a<br>world frozen in time.<br>Here's your chance to relive and
+                reminisce the days gone <br>by. At this fest its all about time, about the times.<br>Join us at
+                Samgatha 2019 as we "Rewind"</p>
+            <div class="arrowdown" id="d3">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+        <div id="sponsors">
+            <div class="arrowup" id="u4">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <p class="teaser" >TEASER</p>
+            <div class="container">
+                <img src="img/tv.png" class="tv" height="auto"/>
+                <iframe class="y-link" src="https://www.youtube.com/embed/kZiMrOzvMmQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="arrowdown" id="d5">
+                <a href="#">
+                    <img src="img/DownArrow.png" />
+                </a>
+            </div>
+        </div>
+        <div id="team">
+            <div class="arrowup" id="u5">
+                <a href="#">
+                    <img src="img/UpArrow.png" />
+                </a>
+            </div>
+            <!-- <p class="contacthead">CONTACT US</p> -->
+            <div>
+            <p class="contacthead">CONTACT US</p>
+              <div id="contactus">
+              
+             <!--<img src="img/Coming-Soon.jpg"/>-->
+              <div class="container">
+              <img src="img/notebook.png" id="contactusImg">
+              <p class="rotate contact1">Dharmesh</p>
+              <p class="rotate contact2">9962279625</p>
+              <p class="rotate contact3">esd15i018@iiitdm.ac.in</p>
+              <p class="rotate contact4">Arya</p>
+              <p class="rotate contact5">7358169819</p>
+              <p class="rotate contact6">mpd16i016@iiitdm.ac.in</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let list = [
+            ['homepage1', 1],
+            ['about1', 0],
+            ['theme1', 0],
+            ['sponsors1', 0],
+            ['team1', 0]
+        ];
+        let list2 = ['d1', 'd2', 'd3', 'd5'];
+        let list3 = ['u1', 'u2', 'u4', 'u5'];
+    </script>
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/active.js"></script>
+    <script>
+        $("a").hover(function () {
+            if (list[pos][0] != $(this).attr('id')) {
+                $(this).css("color", "#F38445");
+            }
+        }, function () {
+            if (list[pos][0] != $(this).attr('id')) {
+                $(this).css("color", "white");
+            }
+        });
+    </script>
+</body>
+
+</html>
